@@ -47,18 +47,22 @@ class CodilityTests: XCTestCase {
     }
     
     func test_frogRiverOne() {
-        
+        XCTAssertEqual(6, frogRiverOne(5, [1, 3, 1, 4, 2, 3, 5, 4]))
     }
     
     func test_maxCounters() {
-        
+        XCTAssertEqual([3, 2, 2, 4, 2], maxCounters(5, [3, 4, 4, 6, 1, 4, 4]))
     }
     
     func test_missingInteger() {
-        
+        XCTAssertEqual(5, missingInteger([1, 3, 6, 4, 1, 2]))
+        XCTAssertEqual(4, missingInteger([1, 2, 3]))
+        XCTAssertEqual(1, missingInteger([-1, -3]))
     }
     
     func test_permCheck() {
-        
+        XCTAssertEqual(1, permCheck([4, 1, 3, 2]))
+        XCTAssertEqual(0, permCheck([4, 1, 3]))
+        XCTAssertEqual(0, permCheck([1, 1]))
     }
 }
