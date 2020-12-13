@@ -14,8 +14,9 @@
 		24352CE62584CAA90010A346 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24352CE52584CAA90010A346 /* Assets.xcassets */; };
 		24352CE92584CAA90010A346 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24352CE72584CAA90010A346 /* LaunchScreen.storyboard */; };
 		24352CFF2584CAA90010A346 /* CodeTrainingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24352CFE2584CAA90010A346 /* CodeTrainingUITests.swift */; };
-		24352D142584CAC20010A346 /* CodilityBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24352D132584CAC20010A346 /* CodilityBasic.swift */; };
+		24352D142584CAC20010A346 /* CodilityBasic1to5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24352D132584CAC20010A346 /* CodilityBasic1to5.swift */; };
 		24352D232584CB340010A346 /* CodilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24352D222584CB340010A346 /* CodilityTests.swift */; };
+		24B861F525861390000A3579 /* Codility6to.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B861F425861390000A3579 /* Codility6to.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +50,9 @@
 		24352CFA2584CAA90010A346 /* CodeTrainingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeTrainingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24352CFE2584CAA90010A346 /* CodeTrainingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTrainingUITests.swift; sourceTree = "<group>"; };
 		24352D002584CAA90010A346 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		24352D132584CAC20010A346 /* CodilityBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodilityBasic.swift; sourceTree = "<group>"; };
+		24352D132584CAC20010A346 /* CodilityBasic1to5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodilityBasic1to5.swift; sourceTree = "<group>"; };
 		24352D222584CB340010A346 /* CodilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodilityTests.swift; sourceTree = "<group>"; };
+		24B861F425861390000A3579 /* Codility6to.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codility6to.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +136,8 @@
 		24352D0F2584CAB20010A346 /* Codility */ = {
 			isa = PBXGroup;
 			children = (
-				24352D132584CAC20010A346 /* CodilityBasic.swift */,
+				24352D132584CAC20010A346 /* CodilityBasic1to5.swift */,
+				24B861F425861390000A3579 /* Codility6to.swift */,
 			);
 			path = Codility;
 			sourceTree = "<group>";
@@ -279,8 +282,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				24352CE12584CAA90010A346 /* ViewController.swift in Sources */,
-				24352D142584CAC20010A346 /* CodilityBasic.swift in Sources */,
+				24352D142584CAC20010A346 /* CodilityBasic1to5.swift in Sources */,
 				24352CDD2584CAA90010A346 /* AppDelegate.swift in Sources */,
+				24B861F525861390000A3579 /* Codility6to.swift in Sources */,
 				24352CDF2584CAA90010A346 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
