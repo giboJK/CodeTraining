@@ -114,4 +114,27 @@ class CodilityTests: XCTestCase {
     func test_numberOfDiscInterections() {
         XCTAssertEqual(11, sut.numberOfDiscInterections([1, 5, 2, 1, 4, 0]))
     }
+    
+    func test_triangle() {
+        XCTAssertEqual(1, sut.triangle([10, 2, 5, 1, 8, 20]))
+        XCTAssertEqual(0, sut.triangle([10, 50, 5, 1]))
+    }
+    
+    func test_brackets() {
+        XCTAssertEqual(1, sut.brackets("{[()()]}"))
+        XCTAssertEqual(0, sut.brackets("{[)()]"))
+        XCTAssertEqual(0, sut.brackets("}}}}"))
+    }
+    
+    func test_fish() {
+        
+    }
+    
+    func test_nesting() {
+        
+    }
+    
+    func test_stoneWall() {
+        
+    }
 }

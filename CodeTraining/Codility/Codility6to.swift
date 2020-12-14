@@ -58,8 +58,58 @@ extension Codility {
     
     
 
-    func triangle() {
+    func triangle(_ A: [Int]) -> Int {
+        let sorted = A.sorted()
+        if A.count < 3 {
+            return 0
+        }
         
+        for i in 0 ..< A.count - 2 {
+            if sorted[i] + sorted[i + 1] > sorted[i + 2] {
+                return 1
+            }
+        }
+        
+        return 0
     }
 
+    func brackets(_ S: String) -> Int {
+        var stack: Array<Character> = []
+        
+        for i in 0 ..< S.count {
+            if S[String.Index(encodedOffset: i)] == "(" {
+                stack.append(S[String.Index(encodedOffset: i)])
+            } else if S[String.Index(encodedOffset: i)] == "{" {
+                stack.append(S[String.Index(encodedOffset: i)])
+            } else if S[String.Index(encodedOffset: i)] == "[" {
+                stack.append(S[String.Index(encodedOffset: i)])
+            } else if S[String.Index(encodedOffset: i)] == ")" {
+                if stack.last == "(" {
+                    _ = stack.popLast()
+                } else { return 0 }
+            } else if S[String.Index(encodedOffset: i)] == "}" {
+                if stack.last == "{" {
+                    _ = stack.popLast()
+                } else { return 0 }
+            } else if S[String.Index(encodedOffset: i)] == "]" {
+                if stack.last == "[" {
+                    _ = stack.popLast()
+                } else { return 0 }
+            }
+        }
+        
+        return stack.isEmpty ? 1 : 0
+    }
+    
+    func fish(A: [Int], _ B: [Int]) -> Int {
+        return 0
+    }
+    
+    func nesting() {
+        
+    }
+    
+    func stoneWall() {
+        
+    }
 }
