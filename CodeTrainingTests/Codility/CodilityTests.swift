@@ -127,14 +127,27 @@ class CodilityTests: XCTestCase {
     }
     
     func test_fish() {
-        
+        XCTAssertEqual(2, sut.fish([4, 3, 2, 1, 5], [0, 1, 0, 0, 0]))
     }
     
     func test_nesting() {
-        
+        XCTAssertEqual(1, sut.nesting("(()(())())"))
+        XCTAssertEqual(0, sut.nesting("())"))
     }
     
     func test_stoneWall() {
-        
+        XCTAssertEqual(2, sut.stoneWall([5, 8, 8, 8, 8, 8, 5]))
+        XCTAssertEqual(2, sut.stoneWall([8, 8, 8, 8, 8, 5]))
+        XCTAssertEqual(7, sut.stoneWall([8, 8, 5, 7, 9, 8, 7, 4, 8]))
+    }
+    
+    func test_dominator() {
+        XCTAssertEqual(7, sut.dominator([3, 4, 3, 2, 3, -1, 3, 3]))
+        XCTAssertEqual(0, sut.dominator([3]))
+        XCTAssertEqual(-1, sut.dominator([3, -2, 6, 5, 5, 5]))
+    }
+    
+    func test_equiLeader() {
+        XCTAssertEqual(2, sut.equiLeader([4, 3, 4, 4, 4, 2]))
     }
 }

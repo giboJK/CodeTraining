@@ -101,15 +101,97 @@ extension Codility {
         return stack.isEmpty ? 1 : 0
     }
     
-    func fish(A: [Int], _ B: [Int]) -> Int {
-        return 0
+    func fish(_ A: [Int], _ B: [Int]) -> Int {
+        var stack = [Int]()
+        var survivedFishes = 0
+        
+        for i in 0 ..< A.count {
+            if B[i] == 0 {
+                while !stack.isEmpty {
+                    let thatBoy = stack.last!
+                    if thatBoy > A[i] {
+                        break
+                    }
+                    _ = stack.popLast()
+                }
+                if stack.isEmpty {
+                    survivedFishes += 1
+                }
+            } else {
+                stack.append(A[i])
+            }
+        }
+        
+        return stack.count + survivedFishes
     }
     
-    func nesting() {
+    func nesting(_ S: String) -> Int {
+        var stack: Array<Character> = []
         
+        for i in 0 ..< S.count {
+            if S[String.Index(encodedOffset: i)] == "(" {
+                stack.append(S[String.Index(encodedOffset: i)])
+            } else {
+                if stack.last == "(" {
+                    _ = stack.popLast()
+                } else { return 0 }
+            }
+        }
+        
+        return stack.isEmpty ? 1 : 0
     }
     
-    func stoneWall() {
+    func stoneWall(_ H: [Int]) -> Int {
+        var blocks = [Int]()
+        var count = 0
         
+        H.forEach { height in
+            if blocks.isEmpty {
+                blocks.append(height)
+            } else if height > blocks.last! {
+                blocks.append(height)
+            } else if height < blocks.last! {
+                while !blocks.isEmpty &&
+                      (blocks.last! > height) {
+                    count += 1
+                    _ = blocks.removeLast()
+                }
+                
+                if blocks.isEmpty {
+                    blocks.append(height)
+                } else if height != blocks.last! {
+                    blocks.append(height)
+                }
+            }
+        }
+        
+        return count + blocks.count
+    }
+    
+    func dominator(_ A: [Int]) -> Int {
+        var dict: [Int: Int] = [:]
+        
+        for i in 0 ..< A.count {
+            if let occurance = dict[A[i]] {
+                dict.updateValue(occurance + 1, forKey: A[i])
+                if occurance + 1 > A.count / 2 {
+                    return i
+                }
+            } else {
+                dict.updateValue(1, forKey: A[i])
+            }
+        }
+        
+        if A.count == 1 {
+            return 0
+        }
+        
+        return -1
+    }
+    
+    func equiLeader(_ A: [Int]) -> Int {
+        var count = 0
+        
+        return count
     }
 }
