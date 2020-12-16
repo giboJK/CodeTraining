@@ -148,6 +148,9 @@ class CodilityTests: XCTestCase {
     }
     
     func test_equiLeader() {
-        XCTAssertEqual(2, sut.equiLeader([4, 3, 4, 4, 4, 2]))
+//        XCTAssertEqual(2, sut.equiLeader([4, 3, 4, 4, 4, 2]))
+//        XCTAssertEqual(2, sut.equiLeader([4, 4, 4, 4, 4, 0, 2]))
+        XCTAssertEqual(4, sut.equiLeader([4, 0, 2, 4, 4, 4, 4, 4]))
+//        XCTAssertEqual(0, sut.equiLeader([4, 0, 2, 1, 4, 4]))
     }
 }

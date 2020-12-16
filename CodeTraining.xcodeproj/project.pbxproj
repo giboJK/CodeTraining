@@ -16,7 +16,7 @@
 		24352CFF2584CAA90010A346 /* CodeTrainingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24352CFE2584CAA90010A346 /* CodeTrainingUITests.swift */; };
 		24352D142584CAC20010A346 /* CodilityBasic1to5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24352D132584CAC20010A346 /* CodilityBasic1to5.swift */; };
 		24352D232584CB340010A346 /* CodilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24352D222584CB340010A346 /* CodilityTests.swift */; };
-		24B861F525861390000A3579 /* Codility6to.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B861F425861390000A3579 /* Codility6to.swift */; };
+		24B861F525861390000A3579 /* Codility6to8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B861F425861390000A3579 /* Codility6to8.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,7 @@
 		24352D002584CAA90010A346 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24352D132584CAC20010A346 /* CodilityBasic1to5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodilityBasic1to5.swift; sourceTree = "<group>"; };
 		24352D222584CB340010A346 /* CodilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodilityTests.swift; sourceTree = "<group>"; };
-		24B861F425861390000A3579 /* Codility6to.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codility6to.swift; sourceTree = "<group>"; };
+		24B861F425861390000A3579 /* Codility6to8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codility6to8.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				24352D132584CAC20010A346 /* CodilityBasic1to5.swift */,
-				24B861F425861390000A3579 /* Codility6to.swift */,
+				24B861F425861390000A3579 /* Codility6to8.swift */,
 			);
 			path = Codility;
 			sourceTree = "<group>";
@@ -284,7 +284,7 @@
 				24352CE12584CAA90010A346 /* ViewController.swift in Sources */,
 				24352D142584CAC20010A346 /* CodilityBasic1to5.swift in Sources */,
 				24352CDD2584CAA90010A346 /* AppDelegate.swift in Sources */,
-				24B861F525861390000A3579 /* Codility6to.swift in Sources */,
+				24B861F525861390000A3579 /* Codility6to8.swift in Sources */,
 				24352CDF2584CAA90010A346 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

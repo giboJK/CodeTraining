@@ -190,8 +190,37 @@ extension Codility {
     }
     
     func equiLeader(_ A: [Int]) -> Int {
-        var count = 0
+        var ans = 0
+        var dict: [Int: Int] = [:]
+        var dominator: Int?
+        var countOfDominator = 0
         
-        return count
+        for i in 0 ..< A.count {
+            if let occurance = dict[A[i]] {
+                dict.updateValue(occurance + 1, forKey: A[i])
+                if occurance + 1 > A.count / 2 {
+                    dominator = A[i]
+                }
+            } else {
+                dict.updateValue(1, forKey: A[i])
+            }
+        }
+        
+        if dominator == nil {
+            return 0
+        }
+        
+        for i in 0 ..< A.count {
+            if A[i] == dominator {
+                countOfDominator += 1
+            }
+            
+            if countOfDominator > (i + 1) / 2,
+               dict[dominator!]! - countOfDominator > (A.count - 1 - i) / 2 {
+                ans += 1
+            }
+        }
+        
+        return ans
     }
 }
