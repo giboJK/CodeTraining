@@ -148,9 +148,28 @@ class CodilityTests: XCTestCase {
     }
     
     func test_equiLeader() {
-//        XCTAssertEqual(2, sut.equiLeader([4, 3, 4, 4, 4, 2]))
-//        XCTAssertEqual(2, sut.equiLeader([4, 4, 4, 4, 4, 0, 2]))
+        XCTAssertEqual(2, sut.equiLeader([4, 3, 4, 4, 4, 2]))
+        XCTAssertEqual(2, sut.equiLeader([4, 4, 4, 4, 4, 0, 2]))
         XCTAssertEqual(4, sut.equiLeader([4, 0, 2, 4, 4, 4, 4, 4]))
-//        XCTAssertEqual(0, sut.equiLeader([4, 0, 2, 1, 4, 4]))
+        XCTAssertEqual(0, sut.equiLeader([4, 0, 2, 1, 4, 4]))
+    }
+    
+    func test_maxDoubleSliceSum() {
+        XCTAssertEqual(209, sut.maxDoubleSliceSum([3, 200, 6, -1, 3, -3, 0, 2]))
+        XCTAssertEqual(17, sut.maxDoubleSliceSum([3, 2, 6, -1, 4, 5, -1, 2]))
+        XCTAssertEqual(12, sut.maxDoubleSliceSum([3, 2, 6, -1, 4, -3, -1, 2]))
+        XCTAssertEqual(110, sut.maxDoubleSliceSum([3, 2, 6, -1, 3, -3, 100, 2]))
+        XCTAssertEqual(107, sut.maxDoubleSliceSum([3, 2, 6, -1, -3, 100, 0, 2]))
+        XCTAssertEqual(0, sut.maxDoubleSliceSum([5, 5, 5]))
+        XCTAssertEqual(0, sut.maxDoubleSliceSum([-4, -4, -4, -4]))
+        XCTAssertEqual(17, sut.maxDoubleSliceSum([5, 17, 0, 3]))
+    }
+    
+    func test_maxProfit() {
+        
+    }
+    
+    func test_maxSliceSum() {
+        
     }
 }
