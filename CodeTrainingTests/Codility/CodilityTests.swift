@@ -158,15 +158,19 @@ class CodilityTests: XCTestCase {
         XCTAssertEqual(209, sut.maxDoubleSliceSum([3, 200, 6, -1, 3, -3, 0, 2]))
         XCTAssertEqual(17, sut.maxDoubleSliceSum([3, 2, 6, -1, 4, 5, -1, 2]))
         XCTAssertEqual(12, sut.maxDoubleSliceSum([3, 2, 6, -1, 4, -3, -1, 2]))
-        XCTAssertEqual(110, sut.maxDoubleSliceSum([3, 2, 6, -1, 3, -3, 100, 2]))
-        XCTAssertEqual(107, sut.maxDoubleSliceSum([3, 2, 6, -1, -3, 100, 0, 2]))
+        XCTAssertEqual(1099, sut.maxDoubleSliceSum([3, 2, 6, -1, -3, 3, 100, 2, -10, -10, 1000, 0]))
         XCTAssertEqual(0, sut.maxDoubleSliceSum([5, 5, 5]))
         XCTAssertEqual(0, sut.maxDoubleSliceSum([-4, -4, -4, -4]))
         XCTAssertEqual(17, sut.maxDoubleSliceSum([5, 17, 0, 3]))
+        XCTAssertEqual(21, sut.maxDoubleSliceSum([5, 5, -3, -1, 17, 3]))
+        XCTAssertEqual(40, sut.maxDoubleSliceSum([0, 20, 0, 20, 0]))
+        XCTAssertEqual(26, sut.maxDoubleSliceSum([6, 1, 5, 6, 4, 2, 9, 4]))
     }
     
     func test_maxProfit() {
-        
+        XCTAssertEqual(356, sut.maxProfit([23171, 21011, 21123, 21366, 21013, 21367]))
+        XCTAssertEqual(10000, sut.maxProfit([10, 10010, 0, 5000]))
+        XCTAssertEqual(0, sut.maxProfit([10, 9, 8, 5]))
     }
     
     func test_maxSliceSum() {
