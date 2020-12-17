@@ -171,9 +171,16 @@ class CodilityTests: XCTestCase {
         XCTAssertEqual(356, sut.maxProfit([23171, 21011, 21123, 21366, 21013, 21367]))
         XCTAssertEqual(10000, sut.maxProfit([10, 10010, 0, 5000]))
         XCTAssertEqual(0, sut.maxProfit([10, 9, 8, 5]))
+        XCTAssertEqual(0, sut.maxProfit([]))
+        XCTAssertEqual(0, sut.maxProfit([1]))
     }
     
     func test_maxSliceSum() {
-        
+        XCTAssertEqual(5, sut.maxSliceSum([3, 2, -6, 4, 0]))
+        XCTAssertEqual(-10, sut.maxSliceSum([-10]))
+        XCTAssertEqual(1, sut.maxSliceSum([-2, 1]))
+        XCTAssertEqual(-1, sut.maxSliceSum([-1, -2, -3, -4, -5]))
+        XCTAssertEqual(-1, sut.maxSliceSum([-5, -4, -3, -2, -1]))
+        XCTAssertEqual(0, sut.maxSliceSum([0, 0]))
     }
 }
