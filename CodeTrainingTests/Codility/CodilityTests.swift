@@ -183,4 +183,32 @@ class CodilityTests: XCTestCase {
         XCTAssertEqual(-1, sut.maxSliceSum([-5, -4, -3, -2, -1]))
         XCTAssertEqual(0, sut.maxSliceSum([0, 0]))
     }
+    
+    func test_countFactors() {
+        XCTAssertEqual(8, sut.countFactors(24))
+    }
+    
+    func test_flags() {
+//        XCTAssertEqual(0, sut.flags([1]))
+//        XCTAssertEqual(0, sut.flags([1, 2]))
+//        XCTAssertEqual(1, sut.flags([1, 5, 2]))
+//        XCTAssertEqual(0, sut.flags([7, 5, 2]))
+//        XCTAssertEqual(0, sut.flags([1, 2, 4]))
+//        XCTAssertEqual(3, sut.flags([1, 5, 2, 3, 4, 1, 3, 4, 3]))
+//        XCTAssertEqual(3, sut.flags([1, 5, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2]))
+        XCTAssertEqual(4, sut.flags([1, 5, 1, 1, 1, 5, 1, 1, 1, 5, 1, 1, 1, 5, 1]))
+    }
+    
+    func test_minPerimeterRectangle() {
+        XCTAssertEqual(22, sut.minPerimeterRectangle(30))
+        XCTAssertEqual(40, sut.minPerimeterRectangle(100))
+    }
+    
+    func test_peaks() {
+        XCTAssertEqual(0, sut.peaks([1]))
+        XCTAssertEqual(0, sut.peaks([1, 2, 3, 4, 5, 6, 7]))
+        XCTAssertEqual(3, sut.peaks([1, 2, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2]))
+        XCTAssertEqual(1, sut.peaks([1, 2, 1, 4, 1, 4, 1, 2, 1, 4, 1, 2, 1]))
+        XCTAssertEqual(4, sut.peaks([1, 2, 1, 4, 1, 4, 1, 2, 1, 4, 1, 2]))
+    }
 }
