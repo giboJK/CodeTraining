@@ -189,13 +189,13 @@ class CodilityTests: XCTestCase {
     }
     
     func test_flags() {
-//        XCTAssertEqual(0, sut.flags([1]))
-//        XCTAssertEqual(0, sut.flags([1, 2]))
-//        XCTAssertEqual(1, sut.flags([1, 5, 2]))
-//        XCTAssertEqual(0, sut.flags([7, 5, 2]))
-//        XCTAssertEqual(0, sut.flags([1, 2, 4]))
-//        XCTAssertEqual(3, sut.flags([1, 5, 2, 3, 4, 1, 3, 4, 3]))
-//        XCTAssertEqual(3, sut.flags([1, 5, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2]))
+        XCTAssertEqual(0, sut.flags([1]))
+        XCTAssertEqual(0, sut.flags([1, 2]))
+        XCTAssertEqual(1, sut.flags([1, 5, 2]))
+        XCTAssertEqual(0, sut.flags([7, 5, 2]))
+        XCTAssertEqual(0, sut.flags([1, 2, 4]))
+        XCTAssertEqual(3, sut.flags([1, 5, 2, 3, 4, 1, 3, 4, 3]))
+        XCTAssertEqual(3, sut.flags([1, 5, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2]))
         XCTAssertEqual(4, sut.flags([1, 5, 1, 1, 1, 5, 1, 1, 1, 5, 1, 1, 1, 5, 1]))
     }
     
@@ -210,5 +210,25 @@ class CodilityTests: XCTestCase {
         XCTAssertEqual(3, sut.peaks([1, 2, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2]))
         XCTAssertEqual(1, sut.peaks([1, 2, 1, 4, 1, 4, 1, 2, 1, 4, 1, 2, 1]))
         XCTAssertEqual(4, sut.peaks([1, 2, 1, 4, 1, 4, 1, 2, 1, 4, 1, 2]))
+    }
+    
+    func test_sieve() {
+        XCTAssertEqual([false, false, true, true, false, true, false, true, false, false, false, true, false, true, false, false, false, true],
+                       sut.sieve(17))
+    }
+    
+    func test_arrayF() {
+        XCTAssertEqual([0, 0, 0, 0, 2, 0, 2,
+                        0, 2, 3, 2, 0, 2, 0,
+                        2, 3, 2, 0, 2, 0, 2],
+                       sut.arrayF(20))
+    }
+    
+    func test_countNonDivisible() {
+        XCTAssertEqual([2, 4, 3, 2, 0], sut.countNonDivisible([3, 1, 2, 3, 6]))
+    }
+    
+    func test_countSemiprimes() {
+        
     }
 }
