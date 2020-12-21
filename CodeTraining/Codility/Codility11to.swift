@@ -67,8 +67,76 @@ extension Codility {
     }
     
     func countNonDivisible (_ A: [Int]) -> [Int] {
-        return []
+        var numbers: [Int: Int] = [:]
+        var ans: [Int] = []
+
+        for i in 0 ..< A.count {
+            if let value = numbers[A[i]] {
+                numbers.updateValue(value + 1, forKey: A[i])
+            } else {
+                numbers.updateValue(1, forKey: A[i])
+            }
+        }
+
+        for i in 0 ..< A.count {
+            var j = 1
+            var divisors = 0
+            while j * j < A[i] {
+                if A[i] % j == 0 {
+                    if let divisor = numbers[j] {
+                        divisors += divisor
+                    }
+
+                    if let divisor = numbers[A[i] / j] {
+                        divisors += divisor
+                    }
+                }
+
+                j += 1
+            }
+
+            if j * j == A[i],
+               let divisor = numbers[j] {
+                divisors += divisor
+            }
+
+            ans.append(A.count - divisors)
+        }
+
+        return ans
     }
+    
+//    func countNonDivisible (_ A: [Int]) -> [Int] {
+//        var numbers = Array<Int>.init(repeating: 0, count: A.count * 2 + 1)
+//        var ans = Array<Int>.init(repeating: 0, count: A.count)
+//
+//        A.forEach {
+//            numbers[$0] += 1
+//        }
+//
+//        var j = 1
+//        var divisors = 0
+//        for i in 0 ..< A.count {
+//            j = 1
+//            divisors = 0
+//            while j * j < A[i] {
+//                if A[i] % j == 0 {
+//                    divisors += numbers[j]
+//                    divisors += numbers[A[i] / j]
+//                }
+//                j += 1
+//            }
+//
+//            if j * j == A[i] {
+//                divisors += numbers[j]
+//            }
+//
+//            ans[i] = A.count - divisors
+//        }
+//
+//        return ans
+//    }
+    
     
     func countSemiprimes() {
         
