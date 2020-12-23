@@ -224,10 +224,6 @@ class CodilityTests: XCTestCase {
                        sut.arrayF(20))
     }
     
-    func test_countNonDivisible() {
-        XCTAssertEqual([3, 5, 4, 3, 1, 2], sut.countNonDivisible([3, 1, 2, 3, 6, 9]))
-    }
-    
     func test_countSemiprimes() {
         
     }
