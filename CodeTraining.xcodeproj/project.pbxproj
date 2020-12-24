@@ -17,6 +17,7 @@
 		24352D142584CAC20010A346 /* CodilityBasic1to5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24352D132584CAC20010A346 /* CodilityBasic1to5.swift */; };
 		24352D232584CB340010A346 /* CodilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24352D222584CB340010A346 /* CodilityTests.swift */; };
 		2445EF8F259367FF00A2E70B /* Lesson11_CountNonDivisible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2445EF8E259367FF00A2E70B /* Lesson11_CountNonDivisible.swift */; };
+		2445EF9B259380B300A2E70B /* Lesson11_CountSemiprimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2445EF9A259380B300A2E70B /* Lesson11_CountSemiprimes.swift */; };
 		2469DF74258A199C00C66490 /* Codility9to10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469DF73258A199C00C66490 /* Codility9to10.swift */; };
 		24B861F525861390000A3579 /* Codility6to8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B861F425861390000A3579 /* Codility6to8.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +47,7 @@
 		24352D132584CAC20010A346 /* CodilityBasic1to5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodilityBasic1to5.swift; sourceTree = "<group>"; };
 		24352D222584CB340010A346 /* CodilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodilityTests.swift; sourceTree = "<group>"; };
 		2445EF8E259367FF00A2E70B /* Lesson11_CountNonDivisible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson11_CountNonDivisible.swift; sourceTree = "<group>"; };
+		2445EF9A259380B300A2E70B /* Lesson11_CountSemiprimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson11_CountSemiprimes.swift; sourceTree = "<group>"; };
 		2469DF73258A199C00C66490 /* Codility9to10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codility9to10.swift; sourceTree = "<group>"; };
 		24B861F425861390000A3579 /* Codility6to8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codility6to8.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				2445EF8E259367FF00A2E70B /* Lesson11_CountNonDivisible.swift */,
+				2445EF9A259380B300A2E70B /* Lesson11_CountSemiprimes.swift */,
 			);
 			path = Lesson11;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			files = (
 				2445EF8F259367FF00A2E70B /* Lesson11_CountNonDivisible.swift in Sources */,
 				24352D232584CB340010A346 /* CodilityTests.swift in Sources */,
+				2445EF9B259380B300A2E70B /* Lesson11_CountSemiprimes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
