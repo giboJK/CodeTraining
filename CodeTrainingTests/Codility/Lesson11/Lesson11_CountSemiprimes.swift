@@ -69,8 +69,8 @@ class Lesson11_CountSemiprimes: XCTestCase {
         var arrayP = [Int]()
         var arrayQ = [Int]()
         let range = 1...maxValue
-        var p = 1
-        var q = 1
+        var p: Int
+        var q: Int
         for _ in 1...maxCases {
             p = Int.random(in: range)
             q = Int.random(in: range)

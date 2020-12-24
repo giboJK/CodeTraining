@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0880D17E258F478500C92638 /* Codility11to.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0880D17D258F478500C92638 /* Codility11to.swift */; };
+		0880D17E258F478500C92638 /* Codility11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0880D17D258F478500C92638 /* Codility11.swift */; };
 		24352CDD2584CAA90010A346 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24352CDC2584CAA90010A346 /* AppDelegate.swift */; };
 		24352CDF2584CAA90010A346 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24352CDE2584CAA90010A346 /* SceneDelegate.swift */; };
 		24352CE12584CAA90010A346 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24352CE02584CAA90010A346 /* ViewController.swift */; };
@@ -20,6 +20,8 @@
 		2445EF9B259380B300A2E70B /* Lesson11_CountSemiprimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2445EF9A259380B300A2E70B /* Lesson11_CountSemiprimes.swift */; };
 		2469DF74258A199C00C66490 /* Codility9to10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469DF73258A199C00C66490 /* Codility9to10.swift */; };
 		24B861F525861390000A3579 /* Codility6to8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B861F425861390000A3579 /* Codility6to8.swift */; };
+		24DC8F18259454AA00C64726 /* Codility12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DC8F17259454AA00C64726 /* Codility12.swift */; };
+		24DC8F1D259475CD00C64726 /* EuclideanAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DC8F1C259475CD00C64726 /* EuclideanAlgorithm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0880D17D258F478500C92638 /* Codility11to.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codility11to.swift; sourceTree = "<group>"; };
+		0880D17D258F478500C92638 /* Codility11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codility11.swift; sourceTree = "<group>"; };
 		24352CD92584CAA90010A346 /* CodeTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24352CDC2584CAA90010A346 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24352CDE2584CAA90010A346 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +52,8 @@
 		2445EF9A259380B300A2E70B /* Lesson11_CountSemiprimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson11_CountSemiprimes.swift; sourceTree = "<group>"; };
 		2469DF73258A199C00C66490 /* Codility9to10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codility9to10.swift; sourceTree = "<group>"; };
 		24B861F425861390000A3579 /* Codility6to8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codility6to8.swift; sourceTree = "<group>"; };
+		24DC8F17259454AA00C64726 /* Codility12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codility12.swift; sourceTree = "<group>"; };
+		24DC8F1C259475CD00C64726 /* EuclideanAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuclideanAlgorithm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +122,8 @@
 				24352D132584CAC20010A346 /* CodilityBasic1to5.swift */,
 				2469DF73258A199C00C66490 /* Codility9to10.swift */,
 				24B861F425861390000A3579 /* Codility6to8.swift */,
-				0880D17D258F478500C92638 /* Codility11to.swift */,
+				0880D17D258F478500C92638 /* Codility11.swift */,
+				24DC8F17259454AA00C64726 /* Codility12.swift */,
 			);
 			path = CodilityLessonStudying;
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 		24352D1B2584CAD00010A346 /* Codility */ = {
 			isa = PBXGroup;
 			children = (
+				24DC8F1B259475AD00C64726 /* Lesson12 */,
 				2445EF8D259367D200A2E70B /* Lesson11 */,
 				24352D222584CB340010A346 /* CodilityTests.swift */,
 			);
@@ -139,6 +145,14 @@
 				2445EF9A259380B300A2E70B /* Lesson11_CountSemiprimes.swift */,
 			);
 			path = Lesson11;
+			sourceTree = "<group>";
+		};
+		24DC8F1B259475AD00C64726 /* Lesson12 */ = {
+			isa = PBXGroup;
+			children = (
+				24DC8F1C259475CD00C64726 /* EuclideanAlgorithm.swift */,
+			);
+			path = Lesson12;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,12 +257,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				24352CE12584CAA90010A346 /* ViewController.swift in Sources */,
-				0880D17E258F478500C92638 /* Codility11to.swift in Sources */,
+				0880D17E258F478500C92638 /* Codility11.swift in Sources */,
 				2469DF74258A199C00C66490 /* Codility9to10.swift in Sources */,
 				24352D142584CAC20010A346 /* CodilityBasic1to5.swift in Sources */,
 				24352CDD2584CAA90010A346 /* AppDelegate.swift in Sources */,
 				24B861F525861390000A3579 /* Codility6to8.swift in Sources */,
 				24352CDF2584CAA90010A346 /* SceneDelegate.swift in Sources */,
+				24DC8F18259454AA00C64726 /* Codility12.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24DC8F1D259475CD00C64726 /* EuclideanAlgorithm.swift in Sources */,
 				2445EF8F259367FF00A2E70B /* Lesson11_CountNonDivisible.swift in Sources */,
 				24352D232584CB340010A346 /* CodilityTests.swift in Sources */,
 				2445EF9B259380B300A2E70B /* Lesson11_CountSemiprimes.swift in Sources */,
