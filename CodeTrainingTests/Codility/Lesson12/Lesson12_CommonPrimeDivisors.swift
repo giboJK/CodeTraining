@@ -45,6 +45,12 @@ import XCTest
  each element of arrays A, B is an integer within the range [1..2,147,483,647].
  */
 
+/*
+ 두 수의 인수가 = 최대공약수의 인수인 것을 찾으면 된다!
+ 이걸 모르고 소인수분해 알고리즘까지 찾아보았는데 알면 좋을듯하다
+ 아래는 소인수분해 알고리즘 설명글이다
+ https://koosaga.com/239
+ */
 class Lesson12_CommonPrimeDivisors: XCTestCase {
 
     func test() {
@@ -53,6 +59,10 @@ class Lesson12_CommonPrimeDivisors: XCTestCase {
         
         A = [15, 10, 3]
         B = [75, 30, 5]
+        XCTAssertEqual(1, solution(&A, &B))
+        
+        A = [13, 27]
+        B = [169, 36]
         XCTAssertEqual(1, solution(&A, &B))
     }
     
@@ -74,8 +84,48 @@ class Lesson12_CommonPrimeDivisors: XCTestCase {
     }
     
     
-    public func solution(_ A : inout [Int], _ B : inout [Int]) -> Int {
+    func solution(_ A : inout [Int], _ B : inout [Int]) -> Int {
         var ans = 0
+        
+        func binaryGcd(_ a: Int, _ b: Int, _ res: Int = 1) -> Int {
+            if a == b {
+                return a * res
+            } else if a % 2 == 0,
+                      b % 2 == 0 {
+                return binaryGcd(a / 2, b / 2, res * 2)
+            } else if a % 2 == 0 {
+                return binaryGcd(a / 2, b, res)
+            } else if b % 2 == 0 {
+                return binaryGcd(a, b / 2, res)
+            } else if a > b {
+                return binaryGcd(a - b, a, res)
+            } else {
+                return binaryGcd(a, b - a, res)
+            }
+        }
+        
+        for i in 0 ..< A.count {
+            let gcd = binaryGcd(A[i], B[i])
+            var gcdWithA = 0
+            var gcdWithB = 0
+            
+            var tempA = A[i]
+            while gcdWithA != 1 {
+                gcdWithA = binaryGcd(tempA, gcd)
+                tempA /= gcdWithA
+            }
+            
+            var tempB = B[i]
+            while gcdWithB != 1 {
+                gcdWithB = binaryGcd(tempB, gcd)
+                tempB /= gcdWithB
+            }
+            
+            if tempA == 1,
+               tempB == 1 {
+                ans += 1
+            }
+        }
         
         return ans
     }
