@@ -23,6 +23,7 @@
 		24DC8F18259454AA00C64726 /* Codility12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DC8F17259454AA00C64726 /* Codility12.swift */; };
 		24DC8F1D259475CD00C64726 /* EuclideanAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DC8F1C259475CD00C64726 /* EuclideanAlgorithm.swift */; };
 		24F7B7222595501E007E4C7C /* Lesson12_ChocolatesByNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F7B7212595501E007E4C7C /* Lesson12_ChocolatesByNumbers.swift */; };
+		24F7B726259576B1007E4C7C /* Lesson12_CommonPrimeDivisors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F7B725259576B1007E4C7C /* Lesson12_CommonPrimeDivisors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		24DC8F17259454AA00C64726 /* Codility12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codility12.swift; sourceTree = "<group>"; };
 		24DC8F1C259475CD00C64726 /* EuclideanAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuclideanAlgorithm.swift; sourceTree = "<group>"; };
 		24F7B7212595501E007E4C7C /* Lesson12_ChocolatesByNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson12_ChocolatesByNumbers.swift; sourceTree = "<group>"; };
+		24F7B725259576B1007E4C7C /* Lesson12_CommonPrimeDivisors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson12_CommonPrimeDivisors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			children = (
 				24DC8F1C259475CD00C64726 /* EuclideanAlgorithm.swift */,
 				24F7B7212595501E007E4C7C /* Lesson12_ChocolatesByNumbers.swift */,
+				24F7B725259576B1007E4C7C /* Lesson12_CommonPrimeDivisors.swift */,
 			);
 			path = Lesson12;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24F7B726259576B1007E4C7C /* Lesson12_CommonPrimeDivisors.swift in Sources */,
 				24DC8F1D259475CD00C64726 /* EuclideanAlgorithm.swift in Sources */,
 				24F7B7222595501E007E4C7C /* Lesson12_ChocolatesByNumbers.swift in Sources */,
 				2445EF8F259367FF00A2E70B /* Lesson11_CountNonDivisible.swift in Sources */,
