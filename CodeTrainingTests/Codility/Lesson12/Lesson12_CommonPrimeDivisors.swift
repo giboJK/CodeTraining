@@ -47,4 +47,36 @@ import XCTest
 
 class Lesson12_CommonPrimeDivisors: XCTestCase {
 
+    func test() {
+        var A: [Int]
+        var B: [Int]
+        
+        A = [15, 10, 3]
+        B = [75, 30, 5]
+        XCTAssertEqual(1, solution(&A, &B))
+    }
+    
+    func test_maxCases() {
+        let maxValue = 2_147_483_647
+        let maxCases = 6_000
+        let range = 1 ... maxValue
+        var A = [Int]()
+        var B = [Int]()
+        
+        for _ in 0 ..< maxCases {
+            A.append(Int.random(in: range))
+            B.append(Int.random(in: range))
+        }
+        
+        measure {
+            _ = solution(&A, &B)
+        }
+    }
+    
+    
+    public func solution(_ A : inout [Int], _ B : inout [Int]) -> Int {
+        var ans = 0
+        
+        return ans
+    }
 }
