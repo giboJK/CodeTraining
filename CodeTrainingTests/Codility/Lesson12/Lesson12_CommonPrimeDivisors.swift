@@ -50,6 +50,9 @@ import XCTest
  이걸 모르고 소인수분해 알고리즘까지 찾아보았는데 알면 좋을듯하다
  아래는 소인수분해 알고리즘 설명글이다
  https://koosaga.com/239
+ 
+ 채점 결과표
+ https://app.codility.com/demo/results/training3497JB-HRN/
  */
 class Lesson12_CommonPrimeDivisors: XCTestCase {
 
