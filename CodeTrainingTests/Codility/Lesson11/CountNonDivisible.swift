@@ -1,5 +1,5 @@
 //
-//  Lesson11_CountNonDivisible.swift
+//  CountNonDivisible.swift
 //  CodeTrainingTests
 //
 //  Created by 정김기보 on 2020/12/23.
@@ -54,7 +54,7 @@ import XCTest
  https://app.codility.com/demo/results/training2X2C3Y-3KF/
  */
 
-class Lesson11_CountNonDivisible: XCTestCase {
+class CountNonDivisible: XCTestCase {
     
     func test() {
         var a = [Int]()

@@ -1,5 +1,5 @@
 //
-//  Lesson11_CountSemiprimes.swift
+//  CountSemiprimes.swift
 //  CodeTrainingTests
 //
 //  Created by 정김기보 on 2020/12/23.
@@ -54,7 +54,7 @@ import XCTest
  */
 
 
-class Lesson11_CountSemiprimes: XCTestCase {
+class CountSemiprimes: XCTestCase {
     
     func test() {
         let N = 26

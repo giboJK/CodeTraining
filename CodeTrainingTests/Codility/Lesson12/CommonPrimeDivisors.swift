@@ -1,5 +1,5 @@
 //
-//  Lesson12_CommonPrimeDivisors.swift
+//  CommonPrimeDivisors.swift
 //  CodeTrainingTests
 //
 //  Created by 정김기보 on 2020/12/25.
@@ -54,7 +54,7 @@ import XCTest
  채점 결과표
  https://app.codility.com/demo/results/training3497JB-HRN/
  */
-class Lesson12_CommonPrimeDivisors: XCTestCase {
+class CommonPrimeDivisors: XCTestCase {
 
     func test() {
         var A: [Int]

@@ -1,5 +1,5 @@
 //
-//  Lesson12_ChocolatesByNumbers.swift
+//  ChocolatesByNumbers.swift
 //  CodeTrainingTests
 //
 //  Created by 정김기보 on 2020/12/25.
@@ -43,7 +43,7 @@ import XCTest
  
  N and M are integers within the range [1..1,000,000,000].
  */
-class Lesson12_ChocolatesByNumbers: XCTestCase {
+class ChocolatesByNumbers: XCTestCase {
     
     func test() {
         var N: Int
