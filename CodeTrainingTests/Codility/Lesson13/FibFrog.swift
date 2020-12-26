@@ -61,9 +61,18 @@ import XCTest
 
  N is an integer within the range [0..100,000];
  each element of array A is an integer that can have one of the following values: 0, 1.
+ 
+ 0 / 1 / 1 / 2 / 3 / 5 / 8 / 13 / 21 / 34 / 55 / 89 / 144 / 233 / 377 / 610 / 987
  */
 
 class FibFrog: XCTestCase {
+    
+    func appendValue(_ A : inout [Int], _ size: Int) {
+        for _ in 0 ..< size - 1 {
+            A.append(0)
+        }
+        A.append(1)
+    }
     
     func test() {
         var A: [Int]
@@ -90,39 +99,73 @@ class FibFrog: XCTestCase {
         XCTAssertEqual(1, solution(&A))
     }
     
+    func test_500() {
+        var A: [Int] = []
+        
+        // 143 287 431
+        for _ in 0 ..< 3 {
+            appendValue(&A, 144)
+        }
+        XCTAssertEqual(4, solution(&A))
+        
+        A.removeAll()
+        // 1 34 377 89
+        A = [1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0,
+             1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 1,
+             1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1,
+             1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1,
+             1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0,
+             0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0,
+             1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0,
+             0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1,
+             0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1,
+             0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0,
+             1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1,
+             1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0,
+             1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0,
+             0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1,
+             0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0,
+             0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0,
+             0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1,
+             0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0,
+             1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 1,
+             1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0]
+        XCTAssertEqual(4, solution(&A))
+    }
+    
     func test_large_number() {
         let largeNumber = 100_000
         var A = Array<Int>.init(repeating: 0, count: largeNumber)
         let valueRange = 0 ... 1
-        
+
         for i in 0 ..< largeNumber {
             A[i] = Int.random(in: valueRange)
         }
-        
+
         measure {
             _ = solution(&A)
         }
-        
     }
-    
+
     public func solution(_ A : inout [Int]) -> Int {
         var fibonacciNumbers = [0, 1]
-        
+
+        A.append(1)
         var distance = 1
-        while distance <= A.count + 1 {
+        while distance <= A.count {
             fibonacciNumbers.append(distance)
             distance = fibonacciNumbers[fibonacciNumbers.count - 1] + fibonacciNumbers[fibonacciNumbers.count - 2]
         }
-        A.append(1)
-        
+
         var pos: Int
         var jumps: Int
         var j: Int
+        var minJumps = Int.max
         for i in stride(from: fibonacciNumbers.count - 1, to: 1, by: -1) {
             pos = -1
             jumps = 0
             j = i
-            
+
             while j > 0 {
                 if fibonacciNumbers[j] + pos <= A.count - 1 {
                     if A[fibonacciNumbers[j] + pos] == 1 {
@@ -130,7 +173,8 @@ class FibFrog: XCTestCase {
                         jumps += 1
                         j = fibonacciNumbers.count - 1
                         if pos == A.count - 1 {
-                            return jumps
+                            minJumps = min(minJumps, jumps)
+                            break
                         }
                     } else {
                         j -= 1
@@ -140,7 +184,55 @@ class FibFrog: XCTestCase {
                 }
             }
         }
-        
+
+        if minJumps != Int.max {
+            return minJumps
+        }
         return -1
     }
+    
+//    public func solution(_ A : inout [Int]) -> Int {
+//        var fibonacciNumbers = [0, 1]
+//
+//        var distance = 1
+//        A.append(1)
+//        while distance <= A.count {
+//            fibonacciNumbers.append(distance)
+//            distance = fibonacciNumbers[fibonacciNumbers.count - 1] + fibonacciNumbers[fibonacciNumbers.count - 2]
+//        }
+//
+//        var reachable = Array<Int>.init(repeating: -1, count: A.count)
+//        for jump in fibonacciNumbers {
+//            if jump == 0 { continue }
+//            if A[jump - 1] == 1 {
+//                reachable[jump - 1] = 1
+//            }
+//        }
+//
+//        for i in 0 ..< A.count {
+//            if A[i] == 0 || reachable[i] > 0 {
+//                continue
+//            }
+//            var minIdx = -1
+//            var minValue = 100_000
+//
+//            for jump in fibonacciNumbers {
+//                let previousIdx = i - jump
+//                if previousIdx < 0 {
+//                    break
+//                }
+//                if reachable[previousIdx] > 0,
+//                   minValue > reachable[previousIdx] {
+//                    minValue = reachable[previousIdx]
+//                    minIdx = previousIdx
+//                }
+//            }
+//
+//            if minIdx != -1 {
+//                reachable[i] = minValue + 1
+//            }
+//        }
+//
+//        return reachable[A.count - 1]
+//    }
 }
