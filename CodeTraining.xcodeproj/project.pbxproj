@@ -24,6 +24,8 @@
 		24DC8F1D259475CD00C64726 /* EuclideanAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DC8F1C259475CD00C64726 /* EuclideanAlgorithm.swift */; };
 		24F7B7222595501E007E4C7C /* Lesson12_ChocolatesByNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F7B7212595501E007E4C7C /* Lesson12_ChocolatesByNumbers.swift */; };
 		24F7B726259576B1007E4C7C /* Lesson12_CommonPrimeDivisors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F7B725259576B1007E4C7C /* Lesson12_CommonPrimeDivisors.swift */; };
+		24F7B72A2596F218007E4C7C /* Lesson13Fibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F7B7292596F218007E4C7C /* Lesson13Fibonacci.swift */; };
+		24F7B7312597032E007E4C7C /* Fibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F7B7302597032E007E4C7C /* Fibonacci.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		24DC8F1C259475CD00C64726 /* EuclideanAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuclideanAlgorithm.swift; sourceTree = "<group>"; };
 		24F7B7212595501E007E4C7C /* Lesson12_ChocolatesByNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson12_ChocolatesByNumbers.swift; sourceTree = "<group>"; };
 		24F7B725259576B1007E4C7C /* Lesson12_CommonPrimeDivisors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson12_CommonPrimeDivisors.swift; sourceTree = "<group>"; };
+		24F7B7292596F218007E4C7C /* Lesson13Fibonacci.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson13Fibonacci.swift; sourceTree = "<group>"; };
+		24F7B7302597032E007E4C7C /* Fibonacci.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fibonacci.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,7 @@
 				24B861F425861390000A3579 /* Codility6to8.swift */,
 				0880D17D258F478500C92638 /* Codility11.swift */,
 				24DC8F17259454AA00C64726 /* Codility12.swift */,
+				24F7B7292596F218007E4C7C /* Lesson13Fibonacci.swift */,
 			);
 			path = CodilityLessonStudying;
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 		24352D1B2584CAD00010A346 /* Codility */ = {
 			isa = PBXGroup;
 			children = (
+				24F7B72D2596F4C3007E4C7C /* Lesson13 */,
 				24DC8F1B259475AD00C64726 /* Lesson12 */,
 				2445EF8D259367D200A2E70B /* Lesson11 */,
 				24352D222584CB340010A346 /* CodilityTests.swift */,
@@ -159,6 +165,14 @@
 				24F7B725259576B1007E4C7C /* Lesson12_CommonPrimeDivisors.swift */,
 			);
 			path = Lesson12;
+			sourceTree = "<group>";
+		};
+		24F7B72D2596F4C3007E4C7C /* Lesson13 */ = {
+			isa = PBXGroup;
+			children = (
+				24F7B7302597032E007E4C7C /* Fibonacci.swift */,
+			);
+			path = Lesson13;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +283,7 @@
 				24352CDD2584CAA90010A346 /* AppDelegate.swift in Sources */,
 				24B861F525861390000A3579 /* Codility6to8.swift in Sources */,
 				24352CDF2584CAA90010A346 /* SceneDelegate.swift in Sources */,
+				24F7B72A2596F218007E4C7C /* Lesson13Fibonacci.swift in Sources */,
 				24DC8F18259454AA00C64726 /* Codility12.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +295,7 @@
 				24F7B726259576B1007E4C7C /* Lesson12_CommonPrimeDivisors.swift in Sources */,
 				24DC8F1D259475CD00C64726 /* EuclideanAlgorithm.swift in Sources */,
 				24F7B7222595501E007E4C7C /* Lesson12_ChocolatesByNumbers.swift in Sources */,
+				24F7B7312597032E007E4C7C /* Fibonacci.swift in Sources */,
 				2445EF8F259367FF00A2E70B /* Lesson11_CountNonDivisible.swift in Sources */,
 				24352D232584CB340010A346 /* CodilityTests.swift in Sources */,
 				2445EF9B259380B300A2E70B /* Lesson11_CountSemiprimes.swift in Sources */,
