@@ -20,6 +20,7 @@
 		2445EF9B259380B300A2E70B /* CountSemiprimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2445EF9A259380B300A2E70B /* CountSemiprimes.swift */; };
 		2469DF74258A199C00C66490 /* Codility9to10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469DF73258A199C00C66490 /* Codility9to10.swift */; };
 		24B861F525861390000A3579 /* Codility6to8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B861F425861390000A3579 /* Codility6to8.swift */; };
+		24CE39F125989926001B6B3E /* Ladder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE39F025989926001B6B3E /* Ladder.swift */; };
 		24DC8F18259454AA00C64726 /* Codility12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DC8F17259454AA00C64726 /* Codility12.swift */; };
 		24DC8F1D259475CD00C64726 /* EuclideanAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DC8F1C259475CD00C64726 /* EuclideanAlgorithm.swift */; };
 		24F7B7222595501E007E4C7C /* ChocolatesByNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F7B7212595501E007E4C7C /* ChocolatesByNumbers.swift */; };
@@ -57,6 +58,7 @@
 		2445EF9A259380B300A2E70B /* CountSemiprimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountSemiprimes.swift; sourceTree = "<group>"; };
 		2469DF73258A199C00C66490 /* Codility9to10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codility9to10.swift; sourceTree = "<group>"; };
 		24B861F425861390000A3579 /* Codility6to8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codility6to8.swift; sourceTree = "<group>"; };
+		24CE39F025989926001B6B3E /* Ladder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ladder.swift; sourceTree = "<group>"; };
 		24DC8F17259454AA00C64726 /* Codility12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codility12.swift; sourceTree = "<group>"; };
 		24DC8F1C259475CD00C64726 /* EuclideanAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuclideanAlgorithm.swift; sourceTree = "<group>"; };
 		24F7B7212595501E007E4C7C /* ChocolatesByNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChocolatesByNumbers.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 			children = (
 				24F7B7302597032E007E4C7C /* Fibonacci.swift */,
 				24F7B7342597090C007E4C7C /* FibFrog.swift */,
+				24CE39F025989926001B6B3E /* Ladder.swift */,
 			);
 			path = Lesson13;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				24DC8F1D259475CD00C64726 /* EuclideanAlgorithm.swift in Sources */,
 				24F7B7222595501E007E4C7C /* ChocolatesByNumbers.swift in Sources */,
 				24F7B7312597032E007E4C7C /* Fibonacci.swift in Sources */,
+				24CE39F125989926001B6B3E /* Ladder.swift in Sources */,
 				2445EF8F259367FF00A2E70B /* CountNonDivisible.swift in Sources */,
 				24352D232584CB340010A346 /* CodilityTests.swift in Sources */,
 				2445EF9B259380B300A2E70B /* CountSemiprimes.swift in Sources */,
