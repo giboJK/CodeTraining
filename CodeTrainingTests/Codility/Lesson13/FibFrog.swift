@@ -83,12 +83,6 @@ class FibFrog: XCTestCase {
         A = [1, 1, 0, 0, 0]
         XCTAssertEqual(2, solution(&A))
         
-        // jumps - 13, 2, 13
-        A = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1,
-             1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-        XCTAssertEqual(3, solution(&A))
-        
-        // One jump! The number of (A.count + 1) is the fibonaccit number itself.
         A = [0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0]
         XCTAssertEqual(1, solution(&A))
         
@@ -108,8 +102,8 @@ class FibFrog: XCTestCase {
         }
         XCTAssertEqual(4, solution(&A))
         
-        A.removeAll()
         // 1 34 377 89
+        A.removeAll()
         A = [1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0,
              1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 1,
              1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1,
@@ -149,90 +143,47 @@ class FibFrog: XCTestCase {
 
     public func solution(_ A : inout [Int]) -> Int {
         var fibonacciNumbers = [0, 1]
-
         A.append(1)
+        var scoreList = Array.init(repeating: -1, count: A.count)
+
         var distance = 1
         while distance <= A.count {
             fibonacciNumbers.append(distance)
             distance = fibonacciNumbers[fibonacciNumbers.count - 1] + fibonacciNumbers[fibonacciNumbers.count - 2]
         }
-
-        var pos: Int
-        var jumps: Int
-        var j: Int
-        var minJumps = Int.max
-        for i in stride(from: fibonacciNumbers.count - 1, to: 1, by: -1) {
-            pos = -1
-            jumps = 0
-            j = i
-
-            while j > 0 {
-                if fibonacciNumbers[j] + pos <= A.count - 1 {
-                    if A[fibonacciNumbers[j] + pos] == 1 {
-                        pos += fibonacciNumbers[j]
-                        jumps += 1
-                        j = fibonacciNumbers.count - 1
-                        if pos == A.count - 1 {
-                            minJumps = min(minJumps, jumps)
-                            break
-                        }
-                    } else {
-                        j -= 1
-                    }
-                } else {
-                    j -= 1
-                }
+        _ = fibonacciNumbers.removeFirst()
+        _ = fibonacciNumbers.removeFirst()
+        
+        for jump in fibonacciNumbers {
+            if A[jump - 1] == 1 {
+                scoreList[jump - 1] = 1
             }
         }
-
-        if minJumps != Int.max {
-            return minJumps
+        
+        var minJumps: Int
+        for i in 0 ..< A.count {
+            if A[i] == 0 || scoreList[i] > 0 {
+                continue
+            }
+            
+            minJumps = Int.max
+            for jump in fibonacciNumbers {
+                let previousIdx = i - jump
+                if previousIdx < 0 {
+                    break
+                }
+                
+                if scoreList[previousIdx] > 0,
+                   minJumps > scoreList[previousIdx] {
+                    minJumps = scoreList[previousIdx]
+                }
+            }
+            
+            if minJumps != Int.max {
+                scoreList[i] = minJumps + 1
+            }
         }
-        return -1
+        
+        return scoreList[scoreList.count - 1]
     }
-    
-//    public func solution(_ A : inout [Int]) -> Int {
-//        var fibonacciNumbers = [0, 1]
-//
-//        var distance = 1
-//        A.append(1)
-//        while distance <= A.count {
-//            fibonacciNumbers.append(distance)
-//            distance = fibonacciNumbers[fibonacciNumbers.count - 1] + fibonacciNumbers[fibonacciNumbers.count - 2]
-//        }
-//
-//        var reachable = Array<Int>.init(repeating: -1, count: A.count)
-//        for jump in fibonacciNumbers {
-//            if jump == 0 { continue }
-//            if A[jump - 1] == 1 {
-//                reachable[jump - 1] = 1
-//            }
-//        }
-//
-//        for i in 0 ..< A.count {
-//            if A[i] == 0 || reachable[i] > 0 {
-//                continue
-//            }
-//            var minIdx = -1
-//            var minValue = 100_000
-//
-//            for jump in fibonacciNumbers {
-//                let previousIdx = i - jump
-//                if previousIdx < 0 {
-//                    break
-//                }
-//                if reachable[previousIdx] > 0,
-//                   minValue > reachable[previousIdx] {
-//                    minValue = reachable[previousIdx]
-//                    minIdx = previousIdx
-//                }
-//            }
-//
-//            if minIdx != -1 {
-//                reachable[i] = minValue + 1
-//            }
-//        }
-//
-//        return reachable[A.count - 1]
-//    }
 }
