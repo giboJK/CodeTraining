@@ -9,13 +9,12 @@ import Foundation
 
 /*
  https://codility.com/media/train/12-BinarySearch.pdf
- 행렬을 사용하는 방법은 나중에 해봅시다!
  */
+// 1, 2, 3, 4, 5, 6, 7, 8, 10 // 7
 extension Codility {
     func binarySearch(_ A: [Int], _ x: Int) -> Int {
-        let length = A.count
         var beg = 0
-        var end = length - 1
+        var end = A.count - 1
         var result = 0
         
         while beg <= end {
