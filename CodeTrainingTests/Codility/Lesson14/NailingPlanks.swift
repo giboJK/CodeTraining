@@ -114,8 +114,64 @@ class NailingPlanks: XCTestCase {
     }
     
     public func solution(_ A : inout [Int], _ B : inout [Int], _ C : inout [Int]) -> Int {
-        var ans: Int = 1
+        func buildCumulativeNails(nailed: [Bool]) -> [Int] {
+            var cumulativeNails = Array(repeating: 0, count: nailed.count)
+            var nails = 0
         
-        return ans
+            for i in 0..<cumulativeNails.count {
+                if nailed[i] {
+                    nails += 1
+                }
+            
+                cumulativeNails[i] = nails
+            }
+        
+            return cumulativeNails
+        }
+
+        func buildNailed(c: [Int], cIndexLimit: Int) -> [Bool] {
+            var nailed = Array(repeating: false, count: 2 * C.count + 1)
+        
+            for i in 0..<cIndexLimit {
+                nailed[c[i]] = true
+            }
+        
+            return nailed
+        }
+
+        func hasAnyNailBetween(cumulativeNails: [Int], begin: Int, end: Int) -> Bool {
+            return (cumulativeNails[end] - (begin == 0 ? 0 : cumulativeNails[begin - 1])) > 0
+        }
+
+        func coverAll(a: [Int], b: [Int], c: [Int], cIndexLimit: Int) -> Bool {
+            let cumulativeNails = buildCumulativeNails(nailed: buildNailed(c: c, cIndexLimit: cIndexLimit))
+        
+            for i in 0..<a.count {
+                if !hasAnyNailBetween(cumulativeNails: cumulativeNails, begin: A[i], end: B[i]) {
+                    return false
+                }
+            }
+        
+            return true
+        }
+
+        var minNailNum = -1
+
+        var lower = 0
+
+        var upper = C.count
+
+        while lower <= upper {
+            let middle = (lower + upper) / 2
+        
+            if coverAll(a: A, b: B, c: C, cIndexLimit: middle) {
+                minNailNum = middle
+                upper = middle - 1
+            } else {
+                lower = middle + 1
+            }
+        }
+
+        return minNailNum
     }
 }
