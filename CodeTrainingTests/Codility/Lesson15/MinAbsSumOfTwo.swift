@@ -60,8 +60,17 @@ class MinAbsSumOfTwo: XCTestCase {
         A = [1, 4, -3]
         XCTAssertEqual(1, solution(&A))
         
+        A = [0]
+        XCTAssertEqual(0, solution(&A))
+        
+        A = [1, 2, 3, 4]
+        XCTAssertEqual(2, solution(&A))
+        
         A = [-8, 4, 5, -10, 3]
         XCTAssertEqual(3, solution(&A))
+        
+        A = [-15, -10, 0, 1, 3, 5, 6]
+        XCTAssertEqual(0, solution(&A))
     }
     
     func test_large() {
@@ -75,17 +84,61 @@ class MinAbsSumOfTwo: XCTestCase {
         }
     }
     
-    // -10 -8 3 4 5
     public func solution(_ A : inout [Int]) -> Int {
         var ans = Int.max
         A.sort()
-        
         var head = 0
-        var tail = 0
-        while head < A.count {
-            
+        var tail = A.count - 1
+
+        while head <= tail {
+            let a = A[head]
+            var minSum = Int.max
+
+            for i in stride(from: tail, through: head, by: -1) {
+                let b = A[i]
+                let sum = abs(a + b)
+                if sum <= minSum {
+                    minSum = sum
+                } else {
+                    tail = i + 1
+                    break
+                }
+            }
+            head += 1
+            ans = min(ans, minSum)
         }
-        
+
         return ans
     }
+    
+//    public func solution(_ A : inout [Int]) -> Int {
+//        A.sort()
+//        var ans = Int.max
+//        var front = 0
+//        var back = A.count - 1
+//
+//        repeat {
+//            let a = A[front]
+//            var minDif = Int.max
+//            var i = back
+//
+//            repeat {
+//                let b = A[i]
+//                let dif = abs(b + a)
+//                if dif <= minDif {
+//                    minDif = dif
+//                } else {
+//                    break
+//                }
+//                i -= 1
+//            } while front <= i
+//
+//            back = i + 1
+//            front += 1
+//
+//            ans = min(ans, minDif)
+//        } while front <= back
+//
+//        return ans
+//    }
 }
