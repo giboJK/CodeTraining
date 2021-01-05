@@ -27,6 +27,7 @@
 		24B861F525861390000A3579 /* Codility6to8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B861F425861390000A3579 /* Codility6to8.swift */; };
 		24CE39F125989926001B6B3E /* Ladder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE39F025989926001B6B3E /* Ladder.swift */; };
 		24D2F2BC25A1588A0040B7A7 /* CountTriangles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D2F2BB25A1588A0040B7A7 /* CountTriangles.swift */; };
+		24D2F2C025A20B6F0040B7A7 /* MinAbsSumOfTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D2F2BF25A20B6F0040B7A7 /* MinAbsSumOfTwo.swift */; };
 		24DC8F18259454AA00C64726 /* Codility12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DC8F17259454AA00C64726 /* Codility12.swift */; };
 		24DC8F1D259475CD00C64726 /* EuclideanAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DC8F1C259475CD00C64726 /* EuclideanAlgorithm.swift */; };
 		24F7B7222595501E007E4C7C /* ChocolatesByNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F7B7212595501E007E4C7C /* ChocolatesByNumbers.swift */; };
@@ -71,6 +72,7 @@
 		24B861F425861390000A3579 /* Codility6to8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codility6to8.swift; sourceTree = "<group>"; };
 		24CE39F025989926001B6B3E /* Ladder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ladder.swift; sourceTree = "<group>"; };
 		24D2F2BB25A1588A0040B7A7 /* CountTriangles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountTriangles.swift; sourceTree = "<group>"; };
+		24D2F2BF25A20B6F0040B7A7 /* MinAbsSumOfTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinAbsSumOfTwo.swift; sourceTree = "<group>"; };
 		24DC8F17259454AA00C64726 /* Codility12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codility12.swift; sourceTree = "<group>"; };
 		24DC8F1C259475CD00C64726 /* EuclideanAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuclideanAlgorithm.swift; sourceTree = "<group>"; };
 		24F7B7212595501E007E4C7C /* ChocolatesByNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChocolatesByNumbers.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				24760BB025A0B25400D37772 /* AbsDistinct.swift */,
 				24760BB625A0BA8A00D37772 /* CountDistinctSlices.swift */,
 				24D2F2BB25A1588A0040B7A7 /* CountTriangles.swift */,
+				24D2F2BF25A20B6F0040B7A7 /* MinAbsSumOfTwo.swift */,
 			);
 			path = Lesson15;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				08A8C7D2259A093D00A193B4 /* NailingPlanks.swift in Sources */,
 				24CE39F125989926001B6B3E /* Ladder.swift in Sources */,
 				2445EF8F259367FF00A2E70B /* CountNonDivisible.swift in Sources */,
+				24D2F2C025A20B6F0040B7A7 /* MinAbsSumOfTwo.swift in Sources */,
 				24352D232584CB340010A346 /* CodilityTests.swift in Sources */,
 				24760BB125A0B25400D37772 /* AbsDistinct.swift in Sources */,
 				2445EF9B259380B300A2E70B /* CountSemiprimes.swift in Sources */,
