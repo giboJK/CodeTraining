@@ -66,10 +66,10 @@ class MinAbsSumOfTwo: XCTestCase {
         A = [1, 2, 3, 4]
         XCTAssertEqual(2, solution(&A))
         
-        A = [-10, -8, 3, 4, 5]
-        XCTAssertEqual(3, solution(&A))
+        A = [-10, -8, -1, 3, 4, 5]
+        XCTAssertEqual(2, solution(&A))
         
-        A = [-15, -10, 0, 1, 3, 5, 6]
+        A = [-15, -10, -1, 0, 1, 3, 5, 6]
         XCTAssertEqual(0, solution(&A))
     }
     
@@ -87,6 +87,7 @@ class MinAbsSumOfTwo: XCTestCase {
     // 아래보다 직관적으로 이해가 된다!
     // 출처 : https://github.com/ZRonchy/Codility/blob/master/Lesson13/MinAbsSumOfTwo.java
     public func solution(_ A : inout [Int]) -> Int {
+        // 오름차순으로 정렬
         A.sort()
         var front = 0
         var back = A.count - 1
@@ -96,12 +97,11 @@ class MinAbsSumOfTwo: XCTestCase {
             let currentSum = A[front] + A[back]
             minAbsSumOfTwo = min(minAbsSumOfTwo, abs(currentSum))
 
-            
+            // 음수일 경우 덜 작은 수를 빼주면 되므로 front를 뒤 쪽으로 이동시킨다
+            // 반대로 양수일 땐 더 작은 수를 더해야 더 작은 합을 구할 수 있으므로 back을 앞 쪽으로 이동
             if currentSum <= 0 {
                 front += 1
             } else {
-                // 오름차순으로 정렬이 되어 있으므로 값이 양수라면
-                // 뒤에 있는 수를 작은 수를 더해야 더 작은 값을 구할 수 있으므로 back을 줄인다
                 back -= 1
             }
         }
