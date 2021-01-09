@@ -66,7 +66,7 @@ class MinAbsSumOfTwo: XCTestCase {
         A = [1, 2, 3, 4]
         XCTAssertEqual(2, solution(&A))
         
-        A = [-8, 4, 5, -10, 3]
+        A = [-10, -8, 3, 4, 5]
         XCTAssertEqual(3, solution(&A))
         
         A = [-15, -10, 0, 1, 3, 5, 6]
@@ -84,31 +84,29 @@ class MinAbsSumOfTwo: XCTestCase {
         }
     }
     
+    // 아래보다 직관적으로 이해가 된다!
+    // 출처 : https://github.com/ZRonchy/Codility/blob/master/Lesson13/MinAbsSumOfTwo.java
     public func solution(_ A : inout [Int]) -> Int {
-        var ans = Int.max
         A.sort()
-        var head = 0
-        var tail = A.count - 1
+        var front = 0
+        var back = A.count - 1
+        var minAbsSumOfTwo = Int.max
+        
+        while (front <= back) {
+            let currentSum = A[front] + A[back]
+            minAbsSumOfTwo = min(minAbsSumOfTwo, abs(currentSum))
 
-        while head <= tail {
-            let a = A[head]
-            var minSum = Int.max
-
-            for i in stride(from: tail, through: head, by: -1) {
-                let b = A[i]
-                let sum = abs(a + b)
-                if sum <= minSum {
-                    minSum = sum
-                } else {
-                    tail = i + 1
-                    break
-                }
+            
+            if currentSum <= 0 {
+                front += 1
+            } else {
+                // 오름차순으로 정렬이 되어 있으므로 값이 양수라면
+                // 뒤에 있는 수를 작은 수를 더해야 더 작은 값을 구할 수 있으므로 back을 줄인다
+                back -= 1
             }
-            head += 1
-            ans = min(ans, minSum)
         }
-
-        return ans
+        
+        return minAbsSumOfTwo
     }
     
 //    public func solution(_ A : inout [Int]) -> Int {
