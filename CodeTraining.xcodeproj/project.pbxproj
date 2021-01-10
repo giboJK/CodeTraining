@@ -11,6 +11,9 @@
 		08A8C7C7259A090300A193B4 /* Lesson14BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A8C7C6259A090300A193B4 /* Lesson14BinarySearch.swift */; };
 		08A8C7CC259A093200A193B4 /* MinMaxDivision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A8C7CB259A093200A193B4 /* MinMaxDivision.swift */; };
 		08A8C7D2259A093D00A193B4 /* NailingPlanks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A8C7D1259A093D00A193B4 /* NailingPlanks.swift */; };
+		08CA75AE25AB1F9D00659657 /* Lesson16Greedy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CA75AD25AB1F9D00659657 /* Lesson16Greedy.swift */; };
+		08CA75B325AB241300659657 /* MaxNonoverlappingSegments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CA75B225AB241300659657 /* MaxNonoverlappingSegments.swift */; };
+		08CA75B925AB242500659657 /* TieRopes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CA75B825AB242500659657 /* TieRopes.swift */; };
 		24352CDD2584CAA90010A346 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24352CDC2584CAA90010A346 /* AppDelegate.swift */; };
 		24352CDF2584CAA90010A346 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24352CDE2584CAA90010A346 /* SceneDelegate.swift */; };
 		24352CE12584CAA90010A346 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24352CE02584CAA90010A346 /* ViewController.swift */; };
@@ -52,6 +55,9 @@
 		08A8C7C6259A090300A193B4 /* Lesson14BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson14BinarySearch.swift; sourceTree = "<group>"; };
 		08A8C7CB259A093200A193B4 /* MinMaxDivision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinMaxDivision.swift; sourceTree = "<group>"; };
 		08A8C7D1259A093D00A193B4 /* NailingPlanks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NailingPlanks.swift; sourceTree = "<group>"; };
+		08CA75AD25AB1F9D00659657 /* Lesson16Greedy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson16Greedy.swift; sourceTree = "<group>"; };
+		08CA75B225AB241300659657 /* MaxNonoverlappingSegments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxNonoverlappingSegments.swift; sourceTree = "<group>"; };
+		08CA75B825AB242500659657 /* TieRopes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TieRopes.swift; sourceTree = "<group>"; };
 		24352CD92584CAA90010A346 /* CodeTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24352CDC2584CAA90010A346 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24352CDE2584CAA90010A346 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +115,15 @@
 			path = Lesson14;
 			sourceTree = "<group>";
 		};
+		08CA75B125AB23FC00659657 /* Lesson16 */ = {
+			isa = PBXGroup;
+			children = (
+				08CA75B225AB241300659657 /* MaxNonoverlappingSegments.swift */,
+				08CA75B825AB242500659657 /* TieRopes.swift */,
+			);
+			path = Lesson16;
+			sourceTree = "<group>";
+		};
 		24352CD02584CAA90010A346 = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +176,7 @@
 				24DC8F17259454AA00C64726 /* Codility12.swift */,
 				24F7B7292596F218007E4C7C /* Lesson13Fibonacci.swift */,
 				08A8C7C6259A090300A193B4 /* Lesson14BinarySearch.swift */,
+				08CA75AD25AB1F9D00659657 /* Lesson16Greedy.swift */,
 			);
 			path = CodilityLessonStudying;
 			sourceTree = "<group>";
@@ -168,6 +184,7 @@
 		24352D1B2584CAD00010A346 /* Codility */ = {
 			isa = PBXGroup;
 			children = (
+				08CA75B125AB23FC00659657 /* Lesson16 */,
 				24760BAF25A0B23400D37772 /* Lesson15 */,
 				08A8C7CA259A092300A193B4 /* Lesson14 */,
 				24F7B72D2596F4C3007E4C7C /* Lesson13 */,
@@ -327,6 +344,7 @@
 				08A8C7C7259A090300A193B4 /* Lesson14BinarySearch.swift in Sources */,
 				24B861F525861390000A3579 /* Codility6to8.swift in Sources */,
 				24352CDF2584CAA90010A346 /* SceneDelegate.swift in Sources */,
+				08CA75AE25AB1F9D00659657 /* Lesson16Greedy.swift in Sources */,
 				24F7B72A2596F218007E4C7C /* Lesson13Fibonacci.swift in Sources */,
 				24DC8F18259454AA00C64726 /* Codility12.swift in Sources */,
 			);
@@ -342,8 +360,10 @@
 				24DC8F1D259475CD00C64726 /* EuclideanAlgorithm.swift in Sources */,
 				24F7B7222595501E007E4C7C /* ChocolatesByNumbers.swift in Sources */,
 				24F7B7312597032E007E4C7C /* Fibonacci.swift in Sources */,
+				08CA75B925AB242500659657 /* TieRopes.swift in Sources */,
 				08A8C7D2259A093D00A193B4 /* NailingPlanks.swift in Sources */,
 				24CE39F125989926001B6B3E /* Ladder.swift in Sources */,
+				08CA75B325AB241300659657 /* MaxNonoverlappingSegments.swift in Sources */,
 				2445EF8F259367FF00A2E70B /* CountNonDivisible.swift in Sources */,
 				24D2F2C025A20B6F0040B7A7 /* MinAbsSumOfTwo.swift in Sources */,
 				24352D232584CB340010A346 /* CodilityTests.swift in Sources */,
