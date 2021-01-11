@@ -64,7 +64,13 @@ class MaxNonoverlappingSegments: XCTestCase {
         A = []
         B = []
         XCTAssertEqual(0, solution(&A, &B))
-
+        A = [1]
+        B = [1]
+        XCTAssertEqual(1, solution(&A, &B))
+        
+        A = [0, 2, 100]
+        B = [0, 50, 1000]
+        XCTAssertEqual(3, solution(&A, &B))
     }
     
     // performance fail
@@ -91,20 +97,28 @@ class MaxNonoverlappingSegments: XCTestCase {
 //
 //        return maxCount
 //    }
-    
+
+    // 끝점으로 정렬되어 주어진다.
+    // 무조건 앞에 나오는 것은 앞선 곳에서 끝나는 것이라는 뜻!
+    // 끝나는 위치를 저장해놓은 후 끝나는 위치보다 큰 시작위치가 나오면
+    // 해당 시작위치와 같은 인덱스의 끝 위치로 값을 업데이트하고 다음으로 진행
+    // 즉 끝 위치보다 뒤에서 시작하는지 다 돌면서 확인하면서 값만 적절하가 업데이트 해주면 된다.
     public func solution(_ A : inout [Int], _ B : inout [Int]) -> Int {
         if A.isEmpty { return 0 }
-        var maxCount = 0
         
-        var startingPositionSum = Array(repeating: 0, count: B[B.count - 1] + 1)
-        let sorted = A.sorted()
-        for i in 0 ..< sorted.count {
-            startingPositionSum[sorted[i]] += 1
+        var count = 1
+        
+        var end = B[0]
+        
+        for i in 0 ..< A.count {
+            let start = A[i]
+            
+            if end < start {
+                count += 1
+                end = B[i]
+            }
         }
         
-        
-        
-        return maxCount
+        return count
     }
-    
 }
