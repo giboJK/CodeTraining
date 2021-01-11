@@ -246,7 +246,7 @@ class NailingPlanks: XCTestCase {
                 let mid = (left + right) / 2
                 // 비교하려는 판자의 시작 위치가 못의 위치보다 크다몀
                 if A[plankIndexes[mid]] > nailPosition {
-                    // 더 빨리 시작하는 판자를 가져와섯 비교해야 하므로 끝 위치의 값을 줄이고
+                    // 더 빨리 시작하는 판자를 가져와서 비교해야 하므로 끝 위치의 값을 줄이고
                     right = mid - 1
                 } else {
                     // 비교하려는 판자의 시작위치가 못보다 작다면

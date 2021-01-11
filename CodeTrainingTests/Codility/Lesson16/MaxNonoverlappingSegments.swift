@@ -59,13 +59,52 @@ class MaxNonoverlappingSegments: XCTestCase {
         
         A = [1, 3, 7, 9, 9]
         B = [5, 6, 8, 9, 10]
-        
         XCTAssertEqual(3, solution(&A, &B))
+        
+        A = []
+        B = []
+        XCTAssertEqual(0, solution(&A, &B))
+
     }
     
+    // performance fail
+//    public func solution(_ A : inout [Int], _ B : inout [Int]) -> Int {
+//        if A.isEmpty { return 0 }
+//
+//        var maxCount = 0
+//
+//        var count = 0
+//        for i in 0 ..< B.count - 1 {
+//            count = 1
+//            var end = B[i]
+//            var j = i + 1
+//            while j < B.count {
+//                if A[j] > end {
+//                    count += 1
+//                    end = B[j]
+//                }
+//                j += 1
+//            }
+//
+//            maxCount = max(maxCount, count)
+//        }
+//
+//        return maxCount
+//    }
+    
     public func solution(_ A : inout [Int], _ B : inout [Int]) -> Int {
-        var ans = 0
-        return ans
+        if A.isEmpty { return 0 }
+        var maxCount = 0
+        
+        var startingPositionSum = Array(repeating: 0, count: B[B.count - 1] + 1)
+        let sorted = A.sorted()
+        for i in 0 ..< sorted.count {
+            startingPositionSum[sorted[i]] += 1
+        }
+        
+        
+        
+        return maxCount
     }
     
 }

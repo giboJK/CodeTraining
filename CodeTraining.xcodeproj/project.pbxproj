@@ -106,6 +106,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0881D1AD25AC7C5400D595D8 /* HackerRank */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HackerRank;
+			sourceTree = "<group>";
+		};
 		08A8C7CA259A092300A193B4 /* Lesson14 */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +167,7 @@
 		24352CF22584CAA90010A346 /* CodeTrainingTests */ = {
 			isa = PBXGroup;
 			children = (
+				0881D1AD25AC7C5400D595D8 /* HackerRank */,
 				24352D1B2584CAD00010A346 /* Codility */,
 				24352CF52584CAA90010A346 /* Info.plist */,
 			);
