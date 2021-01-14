@@ -10,6 +10,7 @@
 		0880D17E258F478500C92638 /* Codility11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0880D17D258F478500C92638 /* Codility11.swift */; };
 		08A1042525B073A9002A0825 /* Lesson17DynamicProgramming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A1042425B073A9002A0825 /* Lesson17DynamicProgramming.swift */; };
 		08A1042B25B076B3002A0825 /* Lesson17.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A1042A25B076B3002A0825 /* Lesson17.swift */; };
+		08A1042F25B092AC002A0825 /* Dictionaries and Hashmaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A1042E25B092AC002A0825 /* Dictionaries and Hashmaps.swift */; };
 		08A8C7C7259A090300A193B4 /* Lesson14BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A8C7C6259A090300A193B4 /* Lesson14BinarySearch.swift */; };
 		08A8C7CC259A093200A193B4 /* MinMaxDivision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A8C7CB259A093200A193B4 /* MinMaxDivision.swift */; };
 		08A8C7D2259A093D00A193B4 /* NailingPlanks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A8C7D1259A093D00A193B4 /* NailingPlanks.swift */; };
@@ -56,6 +57,7 @@
 		0880D17D258F478500C92638 /* Codility11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codility11.swift; sourceTree = "<group>"; };
 		08A1042425B073A9002A0825 /* Lesson17DynamicProgramming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson17DynamicProgramming.swift; sourceTree = "<group>"; };
 		08A1042A25B076B3002A0825 /* Lesson17.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson17.swift; sourceTree = "<group>"; };
+		08A1042E25B092AC002A0825 /* Dictionaries and Hashmaps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionaries and Hashmaps.swift"; sourceTree = "<group>"; };
 		08A8C7C6259A090300A193B4 /* Lesson14BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson14BinarySearch.swift; sourceTree = "<group>"; };
 		08A8C7CB259A093200A193B4 /* MinMaxDivision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinMaxDivision.swift; sourceTree = "<group>"; };
 		08A8C7D1259A093D00A193B4 /* NailingPlanks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NailingPlanks.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 		0881D1AD25AC7C5400D595D8 /* HackerRank */ = {
 			isa = PBXGroup;
 			children = (
+				08A1042E25B092AC002A0825 /* Dictionaries and Hashmaps.swift */,
 			);
 			path = HackerRank;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				24760BB125A0B25400D37772 /* AbsDistinct.swift in Sources */,
 				2445EF9B259380B300A2E70B /* CountSemiprimes.swift in Sources */,
 				08A8C7CC259A093200A193B4 /* MinMaxDivision.swift in Sources */,
+				08A1042F25B092AC002A0825 /* Dictionaries and Hashmaps.swift in Sources */,
 				24F7B7352597090C007E4C7C /* FibFrog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
