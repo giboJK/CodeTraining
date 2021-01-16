@@ -31,8 +31,11 @@
 		24760BB725A0BA8A00D37772 /* CountDistinctSlices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24760BB625A0BA8A00D37772 /* CountDistinctSlices.swift */; };
 		24B861F525861390000A3579 /* Codility6to8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B861F425861390000A3579 /* Codility6to8.swift */; };
 		24CAC72525B2E39000B4B722 /* countTriplets.txt in Resources */ = {isa = PBXBuildFile; fileRef = 24CAC72425B2E39000B4B722 /* countTriplets.txt */; };
-		24CAC72D25B2E44C00B4B722 /* DictAndHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CAC72C25B2E44C00B4B722 /* DictAndHash.swift */; };
 		24CAC73125B2E50C00B4B722 /* countTripletsSmall.txt in Resources */ = {isa = PBXBuildFile; fileRef = 24CAC73025B2E50C00B4B722 /* countTripletsSmall.txt */; };
+		24CAC73B25B3294C00B4B722 /* expectedZero.txt in Resources */ = {isa = PBXBuildFile; fileRef = 24CAC73A25B3294C00B4B722 /* expectedZero.txt */; };
+		24CAC73F25B337E700B4B722 /* CountTriplets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CAC73E25B337E700B4B722 /* CountTriplets.swift */; };
+		24CAC74325B3383100B4B722 /* CheckMagazine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CAC74225B3383100B4B722 /* CheckMagazine.swift */; };
+		24CAC74925B3389900B4B722 /* SherlockAndAnagrams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CAC74825B3389900B4B722 /* SherlockAndAnagrams.swift */; };
 		24CE39F125989926001B6B3E /* Ladder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE39F025989926001B6B3E /* Ladder.swift */; };
 		24D2F2BC25A1588A0040B7A7 /* CountTriangles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D2F2BB25A1588A0040B7A7 /* CountTriangles.swift */; };
 		24D2F2C025A20B6F0040B7A7 /* MinAbsSumOfTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D2F2BF25A20B6F0040B7A7 /* MinAbsSumOfTwo.swift */; };
@@ -84,8 +87,11 @@
 		24760BB625A0BA8A00D37772 /* CountDistinctSlices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDistinctSlices.swift; sourceTree = "<group>"; };
 		24B861F425861390000A3579 /* Codility6to8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codility6to8.swift; sourceTree = "<group>"; };
 		24CAC72425B2E39000B4B722 /* countTriplets.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = countTriplets.txt; sourceTree = "<group>"; };
-		24CAC72C25B2E44C00B4B722 /* DictAndHash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictAndHash.swift; sourceTree = "<group>"; };
 		24CAC73025B2E50C00B4B722 /* countTripletsSmall.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = countTripletsSmall.txt; sourceTree = "<group>"; };
+		24CAC73A25B3294C00B4B722 /* expectedZero.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = expectedZero.txt; sourceTree = "<group>"; };
+		24CAC73E25B337E700B4B722 /* CountTriplets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountTriplets.swift; sourceTree = "<group>"; };
+		24CAC74225B3383100B4B722 /* CheckMagazine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckMagazine.swift; sourceTree = "<group>"; };
+		24CAC74825B3389900B4B722 /* SherlockAndAnagrams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SherlockAndAnagrams.swift; sourceTree = "<group>"; };
 		24CE39F025989926001B6B3E /* Ladder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ladder.swift; sourceTree = "<group>"; };
 		24D2F2BB25A1588A0040B7A7 /* CountTriangles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountTriangles.swift; sourceTree = "<group>"; };
 		24D2F2BF25A20B6F0040B7A7 /* MinAbsSumOfTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinAbsSumOfTwo.swift; sourceTree = "<group>"; };
@@ -248,8 +254,11 @@
 			isa = PBXGroup;
 			children = (
 				24CAC72425B2E39000B4B722 /* countTriplets.txt */,
-				24CAC72C25B2E44C00B4B722 /* DictAndHash.swift */,
 				24CAC73025B2E50C00B4B722 /* countTripletsSmall.txt */,
+				24CAC73A25B3294C00B4B722 /* expectedZero.txt */,
+				24CAC73E25B337E700B4B722 /* CountTriplets.swift */,
+				24CAC74225B3383100B4B722 /* CheckMagazine.swift */,
+				24CAC74825B3389900B4B722 /* SherlockAndAnagrams.swift */,
 			);
 			path = DictAndHash;
 			sourceTree = "<group>";
@@ -366,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24CAC72525B2E39000B4B722 /* countTriplets.txt in Resources */,
+				24CAC73B25B3294C00B4B722 /* expectedZero.txt in Resources */,
 				24CAC73125B2E50C00B4B722 /* countTripletsSmall.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,14 +407,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				24F7B726259576B1007E4C7C /* CommonPrimeDivisors.swift in Sources */,
+				24CAC74925B3389900B4B722 /* SherlockAndAnagrams.swift in Sources */,
 				24D2F2BC25A1588A0040B7A7 /* CountTriangles.swift in Sources */,
+				24CAC73F25B337E700B4B722 /* CountTriplets.swift in Sources */,
 				24760BB725A0BA8A00D37772 /* CountDistinctSlices.swift in Sources */,
 				24DC8F1D259475CD00C64726 /* EuclideanAlgorithm.swift in Sources */,
 				24F7B7222595501E007E4C7C /* ChocolatesByNumbers.swift in Sources */,
 				24F7B7312597032E007E4C7C /* Fibonacci.swift in Sources */,
-				24CAC72D25B2E44C00B4B722 /* DictAndHash.swift in Sources */,
 				08CA75B925AB242500659657 /* TieRopes.swift in Sources */,
 				08A8C7D2259A093D00A193B4 /* NailingPlanks.swift in Sources */,
+				24CAC74325B3383100B4B722 /* CheckMagazine.swift in Sources */,
 				24CE39F125989926001B6B3E /* Ladder.swift in Sources */,
 				08A1042B25B076B3002A0825 /* Lesson17.swift in Sources */,
 				08CA75B325AB241300659657 /* MaxNonoverlappingSegments.swift in Sources */,
