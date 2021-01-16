@@ -10,7 +10,6 @@
 		0880D17E258F478500C92638 /* Codility11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0880D17D258F478500C92638 /* Codility11.swift */; };
 		08A1042525B073A9002A0825 /* Lesson17DynamicProgramming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A1042425B073A9002A0825 /* Lesson17DynamicProgramming.swift */; };
 		08A1042B25B076B3002A0825 /* Lesson17.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A1042A25B076B3002A0825 /* Lesson17.swift */; };
-		08A1042F25B092AC002A0825 /* Dictionaries and Hashmaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A1042E25B092AC002A0825 /* Dictionaries and Hashmaps.swift */; };
 		08A8C7C7259A090300A193B4 /* Lesson14BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A8C7C6259A090300A193B4 /* Lesson14BinarySearch.swift */; };
 		08A8C7CC259A093200A193B4 /* MinMaxDivision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A8C7CB259A093200A193B4 /* MinMaxDivision.swift */; };
 		08A8C7D2259A093D00A193B4 /* NailingPlanks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A8C7D1259A093D00A193B4 /* NailingPlanks.swift */; };
@@ -31,6 +30,9 @@
 		24760BB125A0B25400D37772 /* AbsDistinct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24760BB025A0B25400D37772 /* AbsDistinct.swift */; };
 		24760BB725A0BA8A00D37772 /* CountDistinctSlices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24760BB625A0BA8A00D37772 /* CountDistinctSlices.swift */; };
 		24B861F525861390000A3579 /* Codility6to8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B861F425861390000A3579 /* Codility6to8.swift */; };
+		24CAC72525B2E39000B4B722 /* countTriplets.txt in Resources */ = {isa = PBXBuildFile; fileRef = 24CAC72425B2E39000B4B722 /* countTriplets.txt */; };
+		24CAC72D25B2E44C00B4B722 /* DictAndHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CAC72C25B2E44C00B4B722 /* DictAndHash.swift */; };
+		24CAC73125B2E50C00B4B722 /* countTripletsSmall.txt in Resources */ = {isa = PBXBuildFile; fileRef = 24CAC73025B2E50C00B4B722 /* countTripletsSmall.txt */; };
 		24CE39F125989926001B6B3E /* Ladder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE39F025989926001B6B3E /* Ladder.swift */; };
 		24D2F2BC25A1588A0040B7A7 /* CountTriangles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D2F2BB25A1588A0040B7A7 /* CountTriangles.swift */; };
 		24D2F2C025A20B6F0040B7A7 /* MinAbsSumOfTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D2F2BF25A20B6F0040B7A7 /* MinAbsSumOfTwo.swift */; };
@@ -57,7 +59,6 @@
 		0880D17D258F478500C92638 /* Codility11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codility11.swift; sourceTree = "<group>"; };
 		08A1042425B073A9002A0825 /* Lesson17DynamicProgramming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson17DynamicProgramming.swift; sourceTree = "<group>"; };
 		08A1042A25B076B3002A0825 /* Lesson17.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson17.swift; sourceTree = "<group>"; };
-		08A1042E25B092AC002A0825 /* Dictionaries and Hashmaps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionaries and Hashmaps.swift"; sourceTree = "<group>"; };
 		08A8C7C6259A090300A193B4 /* Lesson14BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson14BinarySearch.swift; sourceTree = "<group>"; };
 		08A8C7CB259A093200A193B4 /* MinMaxDivision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinMaxDivision.swift; sourceTree = "<group>"; };
 		08A8C7D1259A093D00A193B4 /* NailingPlanks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NailingPlanks.swift; sourceTree = "<group>"; };
@@ -82,6 +83,9 @@
 		24760BB025A0B25400D37772 /* AbsDistinct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsDistinct.swift; sourceTree = "<group>"; };
 		24760BB625A0BA8A00D37772 /* CountDistinctSlices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDistinctSlices.swift; sourceTree = "<group>"; };
 		24B861F425861390000A3579 /* Codility6to8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codility6to8.swift; sourceTree = "<group>"; };
+		24CAC72425B2E39000B4B722 /* countTriplets.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = countTriplets.txt; sourceTree = "<group>"; };
+		24CAC72C25B2E44C00B4B722 /* DictAndHash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictAndHash.swift; sourceTree = "<group>"; };
+		24CAC73025B2E50C00B4B722 /* countTripletsSmall.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = countTripletsSmall.txt; sourceTree = "<group>"; };
 		24CE39F025989926001B6B3E /* Ladder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ladder.swift; sourceTree = "<group>"; };
 		24D2F2BB25A1588A0040B7A7 /* CountTriangles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountTriangles.swift; sourceTree = "<group>"; };
 		24D2F2BF25A20B6F0040B7A7 /* MinAbsSumOfTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinAbsSumOfTwo.swift; sourceTree = "<group>"; };
@@ -115,7 +119,7 @@
 		0881D1AD25AC7C5400D595D8 /* HackerRank */ = {
 			isa = PBXGroup;
 			children = (
-				08A1042E25B092AC002A0825 /* Dictionaries and Hashmaps.swift */,
+				24CAC72325B2E37200B4B722 /* DictAndHash */,
 			);
 			path = HackerRank;
 			sourceTree = "<group>";
@@ -240,6 +244,16 @@
 			path = Lesson15;
 			sourceTree = "<group>";
 		};
+		24CAC72325B2E37200B4B722 /* DictAndHash */ = {
+			isa = PBXGroup;
+			children = (
+				24CAC72425B2E39000B4B722 /* countTriplets.txt */,
+				24CAC72C25B2E44C00B4B722 /* DictAndHash.swift */,
+				24CAC73025B2E50C00B4B722 /* countTripletsSmall.txt */,
+			);
+			path = DictAndHash;
+			sourceTree = "<group>";
+		};
 		24DC8F1B259475AD00C64726 /* Lesson12 */ = {
 			isa = PBXGroup;
 			children = (
@@ -351,6 +365,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24CAC72525B2E39000B4B722 /* countTriplets.txt in Resources */,
+				24CAC73125B2E50C00B4B722 /* countTripletsSmall.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +402,7 @@
 				24DC8F1D259475CD00C64726 /* EuclideanAlgorithm.swift in Sources */,
 				24F7B7222595501E007E4C7C /* ChocolatesByNumbers.swift in Sources */,
 				24F7B7312597032E007E4C7C /* Fibonacci.swift in Sources */,
+				24CAC72D25B2E44C00B4B722 /* DictAndHash.swift in Sources */,
 				08CA75B925AB242500659657 /* TieRopes.swift in Sources */,
 				08A8C7D2259A093D00A193B4 /* NailingPlanks.swift in Sources */,
 				24CE39F125989926001B6B3E /* Ladder.swift in Sources */,
@@ -397,7 +414,6 @@
 				24760BB125A0B25400D37772 /* AbsDistinct.swift in Sources */,
 				2445EF9B259380B300A2E70B /* CountSemiprimes.swift in Sources */,
 				08A8C7CC259A093200A193B4 /* MinMaxDivision.swift in Sources */,
-				08A1042F25B092AC002A0825 /* Dictionaries and Hashmaps.swift in Sources */,
 				24F7B7352597090C007E4C7C /* FibFrog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -553,8 +569,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7DRKXA27FG;
+				DEVELOPMENT_TEAM = 2427333XUL;
 				INFOPLIST_FILE = CodeTraining/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -563,6 +580,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jkkb.CodeTraining;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -573,8 +591,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7DRKXA27FG;
+				DEVELOPMENT_TEAM = 2427333XUL;
 				INFOPLIST_FILE = CodeTraining/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -583,6 +602,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jkkb.CodeTraining;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
