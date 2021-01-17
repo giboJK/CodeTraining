@@ -29,6 +29,9 @@
 		2469DF74258A199C00C66490 /* Codility9to10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469DF73258A199C00C66490 /* Codility9to10.swift */; };
 		24760BB125A0B25400D37772 /* AbsDistinct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24760BB025A0B25400D37772 /* AbsDistinct.swift */; };
 		24760BB725A0BA8A00D37772 /* CountDistinctSlices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24760BB625A0BA8A00D37772 /* CountDistinctSlices.swift */; };
+		24A4967C25B3E2B600EE4F9B /* FrequencyQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A4967B25B3E2B600EE4F9B /* FrequencyQueries.swift */; };
+		24A4968025B4480E00EE4F9B /* frequencyBig.txt in Resources */ = {isa = PBXBuildFile; fileRef = 24A4967F25B4480E00EE4F9B /* frequencyBig.txt */; };
+		24A4968425B4483600EE4F9B /* frequencyBigAnswer.txt in Resources */ = {isa = PBXBuildFile; fileRef = 24A4968325B4483600EE4F9B /* frequencyBigAnswer.txt */; };
 		24B861F525861390000A3579 /* Codility6to8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B861F425861390000A3579 /* Codility6to8.swift */; };
 		24CAC72525B2E39000B4B722 /* countTriplets.txt in Resources */ = {isa = PBXBuildFile; fileRef = 24CAC72425B2E39000B4B722 /* countTriplets.txt */; };
 		24CAC73125B2E50C00B4B722 /* countTripletsSmall.txt in Resources */ = {isa = PBXBuildFile; fileRef = 24CAC73025B2E50C00B4B722 /* countTripletsSmall.txt */; };
@@ -85,6 +88,9 @@
 		2469DF73258A199C00C66490 /* Codility9to10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codility9to10.swift; sourceTree = "<group>"; };
 		24760BB025A0B25400D37772 /* AbsDistinct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsDistinct.swift; sourceTree = "<group>"; };
 		24760BB625A0BA8A00D37772 /* CountDistinctSlices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDistinctSlices.swift; sourceTree = "<group>"; };
+		24A4967B25B3E2B600EE4F9B /* FrequencyQueries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequencyQueries.swift; sourceTree = "<group>"; };
+		24A4967F25B4480E00EE4F9B /* frequencyBig.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = frequencyBig.txt; sourceTree = "<group>"; };
+		24A4968325B4483600EE4F9B /* frequencyBigAnswer.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = frequencyBigAnswer.txt; sourceTree = "<group>"; };
 		24B861F425861390000A3579 /* Codility6to8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codility6to8.swift; sourceTree = "<group>"; };
 		24CAC72425B2E39000B4B722 /* countTriplets.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = countTriplets.txt; sourceTree = "<group>"; };
 		24CAC73025B2E50C00B4B722 /* countTripletsSmall.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = countTripletsSmall.txt; sourceTree = "<group>"; };
@@ -259,6 +265,9 @@
 				24CAC73E25B337E700B4B722 /* CountTriplets.swift */,
 				24CAC74225B3383100B4B722 /* CheckMagazine.swift */,
 				24CAC74825B3389900B4B722 /* SherlockAndAnagrams.swift */,
+				24A4967B25B3E2B600EE4F9B /* FrequencyQueries.swift */,
+				24A4967F25B4480E00EE4F9B /* frequencyBig.txt */,
+				24A4968325B4483600EE4F9B /* frequencyBigAnswer.txt */,
 			);
 			path = DictAndHash;
 			sourceTree = "<group>";
@@ -376,7 +385,9 @@
 			files = (
 				24CAC72525B2E39000B4B722 /* countTriplets.txt in Resources */,
 				24CAC73B25B3294C00B4B722 /* expectedZero.txt in Resources */,
+				24A4968025B4480E00EE4F9B /* frequencyBig.txt in Resources */,
 				24CAC73125B2E50C00B4B722 /* countTripletsSmall.txt in Resources */,
+				24A4968425B4483600EE4F9B /* frequencyBigAnswer.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +426,7 @@
 				24F7B7222595501E007E4C7C /* ChocolatesByNumbers.swift in Sources */,
 				24F7B7312597032E007E4C7C /* Fibonacci.swift in Sources */,
 				08CA75B925AB242500659657 /* TieRopes.swift in Sources */,
+				24A4967C25B3E2B600EE4F9B /* FrequencyQueries.swift in Sources */,
 				08A8C7D2259A093D00A193B4 /* NailingPlanks.swift in Sources */,
 				24CAC74325B3383100B4B722 /* CheckMagazine.swift in Sources */,
 				24CE39F125989926001B6B3E /* Ladder.swift in Sources */,

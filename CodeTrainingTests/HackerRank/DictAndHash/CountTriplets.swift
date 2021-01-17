@@ -11,7 +11,7 @@ class CountTriplets: XCTestCase {
     func test() {
         var arr: [Int]
         var r: Int
-
+        
         arr = [1, 2, 2, 4]
         r = 2
         XCTAssertEqual(2, countTriplets(arr: arr, r: r))
