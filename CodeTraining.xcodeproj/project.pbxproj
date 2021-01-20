@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		080E68E325B8297A00625A00 /* NumberSolitaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080E68E225B8297A00625A00 /* NumberSolitaire.swift */; };
+		080E68E825B8420E00625A00 /* MaxArraySum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080E68E725B8420E00625A00 /* MaxArraySum.swift */; };
 		0880D17E258F478500C92638 /* Codility11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0880D17D258F478500C92638 /* Codility11.swift */; };
 		089F2CFB25B5A9B9001FED28 /* MarkAndToys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089F2CFA25B5A9B9001FED28 /* MarkAndToys.swift */; };
 		08A1042525B073A9002A0825 /* Lesson17DynamicProgramming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A1042425B073A9002A0825 /* Lesson17DynamicProgramming.swift */; };
@@ -66,6 +67,7 @@
 
 /* Begin PBXFileReference section */
 		080E68E225B8297A00625A00 /* NumberSolitaire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberSolitaire.swift; sourceTree = "<group>"; };
+		080E68E725B8420E00625A00 /* MaxArraySum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxArraySum.swift; sourceTree = "<group>"; };
 		0880D17D258F478500C92638 /* Codility11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codility11.swift; sourceTree = "<group>"; };
 		089F2CFA25B5A9B9001FED28 /* MarkAndToys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkAndToys.swift; sourceTree = "<group>"; };
 		08A1042425B073A9002A0825 /* Lesson17DynamicProgramming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson17DynamicProgramming.swift; sourceTree = "<group>"; };
@@ -134,9 +136,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		080E68E625B841FD00625A00 /* DynamicProgramming */ = {
+			isa = PBXGroup;
+			children = (
+				080E68E725B8420E00625A00 /* MaxArraySum.swift */,
+			);
+			path = DynamicProgramming;
+			sourceTree = "<group>";
+		};
+		080E68ED25B8670800625A00 /* Lesson90 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lesson90;
+			sourceTree = "<group>";
+		};
+		080E68EE25B8683200625A00 /* TopCoder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TopCoder;
+			sourceTree = "<group>";
+		};
+		080E68EF25B86ABB00625A00 /* Coderbyte */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coderbyte;
+			sourceTree = "<group>";
+		};
 		0881D1AD25AC7C5400D595D8 /* HackerRank */ = {
 			isa = PBXGroup;
 			children = (
+				080E68E625B841FD00625A00 /* DynamicProgramming */,
 				089F2CF925B5A9A4001FED28 /* Sorting */,
 				24CAC72325B2E37200B4B722 /* DictAndHash */,
 			);
@@ -215,6 +247,8 @@
 		24352CF22584CAA90010A346 /* CodeTrainingTests */ = {
 			isa = PBXGroup;
 			children = (
+				080E68EF25B86ABB00625A00 /* Coderbyte */,
+				080E68EE25B8683200625A00 /* TopCoder */,
 				0881D1AD25AC7C5400D595D8 /* HackerRank */,
 				24352D1B2584CAD00010A346 /* Codility */,
 				24352CF52584CAA90010A346 /* Info.plist */,
@@ -241,6 +275,7 @@
 		24352D1B2584CAD00010A346 /* Codility */ = {
 			isa = PBXGroup;
 			children = (
+				080E68ED25B8670800625A00 /* Lesson90 */,
 				08A1042325B072E4002A0825 /* Lesson17 */,
 				08CA75B125AB23FC00659657 /* Lesson16 */,
 				24760BAF25A0B23400D37772 /* Lesson15 */,
@@ -448,6 +483,7 @@
 				08A8C7D2259A093D00A193B4 /* NailingPlanks.swift in Sources */,
 				24CAC74325B3383100B4B722 /* CheckMagazine.swift in Sources */,
 				24CE39F125989926001B6B3E /* Ladder.swift in Sources */,
+				080E68E825B8420E00625A00 /* MaxArraySum.swift in Sources */,
 				08A1042B25B076B3002A0825 /* Lesson17.swift in Sources */,
 				08CA75B325AB241300659657 /* MaxNonoverlappingSegments.swift in Sources */,
 				2445EF8F259367FF00A2E70B /* CountNonDivisible.swift in Sources */,
