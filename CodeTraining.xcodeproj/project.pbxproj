@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		080E68E325B8297A00625A00 /* NumberSolitaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080E68E225B8297A00625A00 /* NumberSolitaire.swift */; };
 		080E68E825B8420E00625A00 /* MaxArraySum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080E68E725B8420E00625A00 /* MaxArraySum.swift */; };
+		080E68F125B86BAC00625A00 /* CodelandUsernameValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080E68F025B86BAC00625A00 /* CodelandUsernameValidation.swift */; };
 		0880D17E258F478500C92638 /* Codility11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0880D17D258F478500C92638 /* Codility11.swift */; };
 		089F2CFB25B5A9B9001FED28 /* MarkAndToys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089F2CFA25B5A9B9001FED28 /* MarkAndToys.swift */; };
 		08A1042525B073A9002A0825 /* Lesson17DynamicProgramming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A1042425B073A9002A0825 /* Lesson17DynamicProgramming.swift */; };
@@ -68,6 +69,7 @@
 /* Begin PBXFileReference section */
 		080E68E225B8297A00625A00 /* NumberSolitaire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberSolitaire.swift; sourceTree = "<group>"; };
 		080E68E725B8420E00625A00 /* MaxArraySum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxArraySum.swift; sourceTree = "<group>"; };
+		080E68F025B86BAC00625A00 /* CodelandUsernameValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodelandUsernameValidation.swift; sourceTree = "<group>"; };
 		0880D17D258F478500C92638 /* Codility11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codility11.swift; sourceTree = "<group>"; };
 		089F2CFA25B5A9B9001FED28 /* MarkAndToys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkAndToys.swift; sourceTree = "<group>"; };
 		08A1042425B073A9002A0825 /* Lesson17DynamicProgramming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson17DynamicProgramming.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 		080E68EF25B86ABB00625A00 /* Coderbyte */ = {
 			isa = PBXGroup;
 			children = (
+				080E68F025B86BAC00625A00 /* CodelandUsernameValidation.swift */,
 			);
 			path = Coderbyte;
 			sourceTree = "<group>";
@@ -487,6 +490,7 @@
 				08A1042B25B076B3002A0825 /* Lesson17.swift in Sources */,
 				08CA75B325AB241300659657 /* MaxNonoverlappingSegments.swift in Sources */,
 				2445EF8F259367FF00A2E70B /* CountNonDivisible.swift in Sources */,
+				080E68F125B86BAC00625A00 /* CodelandUsernameValidation.swift in Sources */,
 				24D2F2C025A20B6F0040B7A7 /* MinAbsSumOfTwo.swift in Sources */,
 				24352D232584CB340010A346 /* CodilityTests.swift in Sources */,
 				24760BB125A0B25400D37772 /* AbsDistinct.swift in Sources */,
