@@ -18,6 +18,7 @@
 		08A8C7C7259A090300A193B4 /* Lesson14BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A8C7C6259A090300A193B4 /* Lesson14BinarySearch.swift */; };
 		08A8C7CC259A093200A193B4 /* MinMaxDivision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A8C7CB259A093200A193B4 /* MinMaxDivision.swift */; };
 		08A8C7D2259A093D00A193B4 /* NailingPlanks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A8C7D1259A093D00A193B4 /* NailingPlanks.swift */; };
+		08AC3FD825BBDEFE0028A562 /* CountingInversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC3FD725BBDEFE0028A562 /* CountingInversions.swift */; };
 		08CA75AE25AB1F9D00659657 /* Lesson16Greedy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CA75AD25AB1F9D00659657 /* Lesson16Greedy.swift */; };
 		08CA75B325AB241300659657 /* MaxNonoverlappingSegments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CA75B225AB241300659657 /* MaxNonoverlappingSegments.swift */; };
 		08CA75B925AB242500659657 /* TieRopes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CA75B825AB242500659657 /* TieRopes.swift */; };
@@ -82,6 +83,7 @@
 		08A8C7C6259A090300A193B4 /* Lesson14BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson14BinarySearch.swift; sourceTree = "<group>"; };
 		08A8C7CB259A093200A193B4 /* MinMaxDivision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinMaxDivision.swift; sourceTree = "<group>"; };
 		08A8C7D1259A093D00A193B4 /* NailingPlanks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NailingPlanks.swift; sourceTree = "<group>"; };
+		08AC3FD725BBDEFE0028A562 /* CountingInversions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingInversions.swift; sourceTree = "<group>"; };
 		08CA75AD25AB1F9D00659657 /* Lesson16Greedy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson16Greedy.swift; sourceTree = "<group>"; };
 		08CA75B225AB241300659657 /* MaxNonoverlappingSegments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxNonoverlappingSegments.swift; sourceTree = "<group>"; };
 		08CA75B825AB242500659657 /* TieRopes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TieRopes.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				089F2CFA25B5A9B9001FED28 /* MarkAndToys.swift */,
 				248C76DC25B9896C00BF2E9D /* FraudulentActivtyNotifications.swift */,
 				248C76E025B99A0600BF2E9D /* fraud1.txt */,
+				08AC3FD725BBDEFE0028A562 /* CountingInversions.swift */,
 			);
 			path = Sorting;
 			sourceTree = "<group>";
@@ -490,6 +493,7 @@
 				24D2F2BC25A1588A0040B7A7 /* CountTriangles.swift in Sources */,
 				24CAC73F25B337E700B4B722 /* CountTriplets.swift in Sources */,
 				24760BB725A0BA8A00D37772 /* CountDistinctSlices.swift in Sources */,
+				08AC3FD825BBDEFE0028A562 /* CountingInversions.swift in Sources */,
 				24DC8F1D259475CD00C64726 /* EuclideanAlgorithm.swift in Sources */,
 				24F7B7222595501E007E4C7C /* ChocolatesByNumbers.swift in Sources */,
 				24F7B7312597032E007E4C7C /* Fibonacci.swift in Sources */,

@@ -22,6 +22,19 @@ class FraudulentActivtyNotifications: XCTestCase {
         XCTAssertEqual(2, activityNotifications(expenditure: expenditure, d: d))
     }
     
+    func test_even() {
+        var expenditure: [Int]
+        var d: Int
+        
+        expenditure = [10, 20, 30, 40, 50]
+        d = 2
+        XCTAssertEqual(1, activityNotifications(expenditure: expenditure, d: d))
+        
+        expenditure = [2, 2, 5]
+        d = 2
+        XCTAssertEqual(1, activityNotifications(expenditure: expenditure, d: d))
+    }
+    
     func test_big() {
         if let (expenditure, d) = fileRead(fileName: "fraud1") {
             XCTAssertEqual(633, activityNotifications(expenditure: expenditure, d: d))
@@ -31,30 +44,53 @@ class FraudulentActivtyNotifications: XCTestCase {
     func test_speed() {
         var expenditure = [Int]()
         let d: Int = 100
-        
-        for _ in 0 ..< 20_000 {
-            expenditure.append(Int.random(in: 0..<200))
-        }
+        for _ in 0 ..< 20_000 { expenditure.append(Int.random(in: 0..<200)) }
         
         measure {
             _ = activityNotifications(expenditure: expenditure, d: d)
         }
     }
     
-    
     func activityNotifications(expenditure: [Int], d: Int) -> Int {
         var notifications = 0
-        var slice = expenditure.prefix(d)
-        var median = 0
-        
+        var map = [Int](repeating: 0, count: 201)
+        for i in 0 ..< d { map[expenditure[i]] += 1 }
         
         for i in d ..< expenditure.count {
+            var count = d
             if d % 2 == 0 {
+                var avg = 0
+                for j in 0 ..< map.count where map[j] != 0 {
+                    count -= map[j]
+                    if count == d / 2 {
+                        avg += j
+                    } else if count < d / 2 {
+                        if avg != 0 {
+                            avg += j
+                            if avg <= expenditure[i] {
+                                notifications += 1
+                                break
+                            }
+                        } else if (j * 2) <= expenditure[i] {
+                            notifications += 1
+                            break
+                        }
+                    }
+                              
+                }
             } else {
+                for j in 0 ..< map.count where map[j] != 0 {
+                    count -= map[j]
+                    if count <= d / 2,
+                       (j * 2) <= expenditure[i] {
+                        notifications += 1
+                        break
+                    }
+                }
             }
             
-            _ = slice.removeFirst()
-            slice.append(expenditure[i])
+            map[expenditure[i - d]] -= 1
+            map[expenditure[i]] += 1
         }
         
         return notifications
