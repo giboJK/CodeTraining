@@ -34,6 +34,10 @@
 		2469DF74258A199C00C66490 /* Codility9to10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469DF73258A199C00C66490 /* Codility9to10.swift */; };
 		24760BB125A0B25400D37772 /* AbsDistinct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24760BB025A0B25400D37772 /* AbsDistinct.swift */; };
 		24760BB725A0BA8A00D37772 /* CountDistinctSlices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24760BB625A0BA8A00D37772 /* CountDistinctSlices.swift */; };
+		248C76CD25B97B1E00BF2E9D /* AddTwoNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248C76CC25B97B1E00BF2E9D /* AddTwoNumbers.swift */; };
+		248C76D325B97B8F00BF2E9D /* Abbreviation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248C76D225B97B8F00BF2E9D /* Abbreviation.swift */; };
+		248C76DD25B9896C00BF2E9D /* FraudulentActivtyNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248C76DC25B9896C00BF2E9D /* FraudulentActivtyNotifications.swift */; };
+		248C76E125B99A0600BF2E9D /* fraud1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 248C76E025B99A0600BF2E9D /* fraud1.txt */; };
 		24A4967C25B3E2B600EE4F9B /* FrequencyQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A4967B25B3E2B600EE4F9B /* FrequencyQueries.swift */; };
 		24A4968025B4480E00EE4F9B /* frequencyBig.txt in Resources */ = {isa = PBXBuildFile; fileRef = 24A4967F25B4480E00EE4F9B /* frequencyBig.txt */; };
 		24A4968425B4483600EE4F9B /* frequencyBigAnswer.txt in Resources */ = {isa = PBXBuildFile; fileRef = 24A4968325B4483600EE4F9B /* frequencyBigAnswer.txt */; };
@@ -98,6 +102,10 @@
 		2469DF73258A199C00C66490 /* Codility9to10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codility9to10.swift; sourceTree = "<group>"; };
 		24760BB025A0B25400D37772 /* AbsDistinct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsDistinct.swift; sourceTree = "<group>"; };
 		24760BB625A0BA8A00D37772 /* CountDistinctSlices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDistinctSlices.swift; sourceTree = "<group>"; };
+		248C76CC25B97B1E00BF2E9D /* AddTwoNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTwoNumbers.swift; sourceTree = "<group>"; };
+		248C76D225B97B8F00BF2E9D /* Abbreviation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Abbreviation.swift; sourceTree = "<group>"; };
+		248C76DC25B9896C00BF2E9D /* FraudulentActivtyNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FraudulentActivtyNotifications.swift; sourceTree = "<group>"; };
+		248C76E025B99A0600BF2E9D /* fraud1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = fraud1.txt; sourceTree = "<group>"; };
 		24A4967B25B3E2B600EE4F9B /* FrequencyQueries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequencyQueries.swift; sourceTree = "<group>"; };
 		24A4967F25B4480E00EE4F9B /* frequencyBig.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = frequencyBig.txt; sourceTree = "<group>"; };
 		24A4968325B4483600EE4F9B /* frequencyBigAnswer.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = frequencyBigAnswer.txt; sourceTree = "<group>"; };
@@ -142,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				080E68E725B8420E00625A00 /* MaxArraySum.swift */,
+				248C76D225B97B8F00BF2E9D /* Abbreviation.swift */,
 			);
 			path = DynamicProgramming;
 			sourceTree = "<group>";
@@ -151,13 +160,6 @@
 			children = (
 			);
 			path = Lesson90;
-			sourceTree = "<group>";
-		};
-		080E68EE25B8683200625A00 /* TopCoder */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TopCoder;
 			sourceTree = "<group>";
 		};
 		080E68EF25B86ABB00625A00 /* Coderbyte */ = {
@@ -182,6 +184,8 @@
 			isa = PBXGroup;
 			children = (
 				089F2CFA25B5A9B9001FED28 /* MarkAndToys.swift */,
+				248C76DC25B9896C00BF2E9D /* FraudulentActivtyNotifications.swift */,
+				248C76E025B99A0600BF2E9D /* fraud1.txt */,
 			);
 			path = Sorting;
 			sourceTree = "<group>";
@@ -250,8 +254,8 @@
 		24352CF22584CAA90010A346 /* CodeTrainingTests */ = {
 			isa = PBXGroup;
 			children = (
+				248C76CB25B97A1D00BF2E9D /* LeetCode */,
 				080E68EF25B86ABB00625A00 /* Coderbyte */,
-				080E68EE25B8683200625A00 /* TopCoder */,
 				0881D1AD25AC7C5400D595D8 /* HackerRank */,
 				24352D1B2584CAD00010A346 /* Codility */,
 				24352CF52584CAA90010A346 /* Info.plist */,
@@ -309,6 +313,14 @@
 				24D2F2BF25A20B6F0040B7A7 /* MinAbsSumOfTwo.swift */,
 			);
 			path = Lesson15;
+			sourceTree = "<group>";
+		};
+		248C76CB25B97A1D00BF2E9D /* LeetCode */ = {
+			isa = PBXGroup;
+			children = (
+				248C76CC25B97B1E00BF2E9D /* AddTwoNumbers.swift */,
+			);
+			path = LeetCode;
 			sourceTree = "<group>";
 		};
 		24CAC72325B2E37200B4B722 /* DictAndHash */ = {
@@ -439,6 +451,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24CAC72525B2E39000B4B722 /* countTriplets.txt in Resources */,
+				248C76E125B99A0600BF2E9D /* fraud1.txt in Resources */,
 				24CAC73B25B3294C00B4B722 /* expectedZero.txt in Resources */,
 				24A4968025B4480E00EE4F9B /* frequencyBig.txt in Resources */,
 				24CAC73125B2E50C00B4B722 /* countTripletsSmall.txt in Resources */,
@@ -485,6 +498,7 @@
 				24A4967C25B3E2B600EE4F9B /* FrequencyQueries.swift in Sources */,
 				08A8C7D2259A093D00A193B4 /* NailingPlanks.swift in Sources */,
 				24CAC74325B3383100B4B722 /* CheckMagazine.swift in Sources */,
+				248C76DD25B9896C00BF2E9D /* FraudulentActivtyNotifications.swift in Sources */,
 				24CE39F125989926001B6B3E /* Ladder.swift in Sources */,
 				080E68E825B8420E00625A00 /* MaxArraySum.swift in Sources */,
 				08A1042B25B076B3002A0825 /* Lesson17.swift in Sources */,
@@ -495,8 +509,10 @@
 				24352D232584CB340010A346 /* CodilityTests.swift in Sources */,
 				24760BB125A0B25400D37772 /* AbsDistinct.swift in Sources */,
 				2445EF9B259380B300A2E70B /* CountSemiprimes.swift in Sources */,
+				248C76D325B97B8F00BF2E9D /* Abbreviation.swift in Sources */,
 				08A8C7CC259A093200A193B4 /* MinMaxDivision.swift in Sources */,
 				24F7B7352597090C007E4C7C /* FibFrog.swift in Sources */,
+				248C76CD25B97B1E00BF2E9D /* AddTwoNumbers.swift in Sources */,
 				089F2CFB25B5A9B9001FED28 /* MarkAndToys.swift in Sources */,
 				080E68E325B8297A00625A00 /* NumberSolitaire.swift in Sources */,
 			);
