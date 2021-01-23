@@ -13,15 +13,22 @@ import XCTest
 class CountingInversions: XCTestCase {
     func test() {
         var A: [Int]
-        
+
         A = [1, 1, 1, 2, 2]
         XCTAssertEqual(0, countInversions(arr: A))
         A = [7, 5, 3, 1]
         XCTAssertEqual(6, countInversions(arr: A))
-        A = [3, 2, 1]
-        XCTAssertEqual(3, countInversions(arr: A))
         A = [2, 1, 3, 1, 2]
         XCTAssertEqual(4, countInversions(arr: A))
+    }
+
+    func test_speed() {
+        var A: [Int] = []
+        for _ in 0 ..< 100_000 { A.append(Int.random(in: 0..<100_000)) }
+        
+        measure {
+            _ = countInversions(arr: A)
+        }
     }
     
     func countInversions(arr: [Int]) -> Int {
