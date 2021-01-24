@@ -22,6 +22,8 @@
 		08CA75AE25AB1F9D00659657 /* Lesson16Greedy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CA75AD25AB1F9D00659657 /* Lesson16Greedy.swift */; };
 		08CA75B325AB241300659657 /* MaxNonoverlappingSegments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CA75B225AB241300659657 /* MaxNonoverlappingSegments.swift */; };
 		08CA75B925AB242500659657 /* TieRopes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CA75B825AB242500659657 /* TieRopes.swift */; };
+		08DB8DBC25BD7D1200745D9F /* LuckBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DB8DBB25BD7D1200745D9F /* LuckBalance.swift */; };
+		08DB8DC225BD842700745D9F /* ReverseShuffleMerge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DB8DC125BD842700745D9F /* ReverseShuffleMerge.swift */; };
 		24352CDD2584CAA90010A346 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24352CDC2584CAA90010A346 /* AppDelegate.swift */; };
 		24352CDF2584CAA90010A346 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24352CDE2584CAA90010A346 /* SceneDelegate.swift */; };
 		24352CE12584CAA90010A346 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24352CE02584CAA90010A346 /* ViewController.swift */; };
@@ -87,6 +89,8 @@
 		08CA75AD25AB1F9D00659657 /* Lesson16Greedy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson16Greedy.swift; sourceTree = "<group>"; };
 		08CA75B225AB241300659657 /* MaxNonoverlappingSegments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxNonoverlappingSegments.swift; sourceTree = "<group>"; };
 		08CA75B825AB242500659657 /* TieRopes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TieRopes.swift; sourceTree = "<group>"; };
+		08DB8DBB25BD7D1200745D9F /* LuckBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckBalance.swift; sourceTree = "<group>"; };
+		08DB8DC125BD842700745D9F /* ReverseShuffleMerge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseShuffleMerge.swift; sourceTree = "<group>"; };
 		24352CD92584CAA90010A346 /* CodeTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24352CDC2584CAA90010A346 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24352CDE2584CAA90010A346 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -175,6 +179,7 @@
 		0881D1AD25AC7C5400D595D8 /* HackerRank */ = {
 			isa = PBXGroup;
 			children = (
+				08DB8DBA25BD7CF500745D9F /* Greedy */,
 				080E68E625B841FD00625A00 /* DynamicProgramming */,
 				089F2CF925B5A9A4001FED28 /* Sorting */,
 				24CAC72325B2E37200B4B722 /* DictAndHash */,
@@ -219,6 +224,15 @@
 				08CA75B825AB242500659657 /* TieRopes.swift */,
 			);
 			path = Lesson16;
+			sourceTree = "<group>";
+		};
+		08DB8DBA25BD7CF500745D9F /* Greedy */ = {
+			isa = PBXGroup;
+			children = (
+				08DB8DBB25BD7D1200745D9F /* LuckBalance.swift */,
+				08DB8DC125BD842700745D9F /* ReverseShuffleMerge.swift */,
+			);
+			path = Greedy;
 			sourceTree = "<group>";
 		};
 		24352CD02584CAA90010A346 = {
@@ -489,6 +503,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24F7B726259576B1007E4C7C /* CommonPrimeDivisors.swift in Sources */,
+				08DB8DBC25BD7D1200745D9F /* LuckBalance.swift in Sources */,
 				24CAC74925B3389900B4B722 /* SherlockAndAnagrams.swift in Sources */,
 				24D2F2BC25A1588A0040B7A7 /* CountTriangles.swift in Sources */,
 				24CAC73F25B337E700B4B722 /* CountTriplets.swift in Sources */,
@@ -497,6 +512,7 @@
 				24DC8F1D259475CD00C64726 /* EuclideanAlgorithm.swift in Sources */,
 				24F7B7222595501E007E4C7C /* ChocolatesByNumbers.swift in Sources */,
 				24F7B7312597032E007E4C7C /* Fibonacci.swift in Sources */,
+				08DB8DC225BD842700745D9F /* ReverseShuffleMerge.swift in Sources */,
 				08CA75B925AB242500659657 /* TieRopes.swift in Sources */,
 				08A4A2D125B5ADDA00FFE930 /* MinAbsSum.swift in Sources */,
 				24A4967C25B3E2B600EE4F9B /* FrequencyQueries.swift in Sources */,
