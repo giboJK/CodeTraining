@@ -10,6 +10,7 @@
 		080E68E325B8297A00625A00 /* NumberSolitaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080E68E225B8297A00625A00 /* NumberSolitaire.swift */; };
 		080E68E825B8420E00625A00 /* MaxArraySum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080E68E725B8420E00625A00 /* MaxArraySum.swift */; };
 		080E68F125B86BAC00625A00 /* CodelandUsernameValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080E68F025B86BAC00625A00 /* CodelandUsernameValidation.swift */; };
+		086483D025C050500006CB8D /* StringProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086483CF25C050500006CB8D /* StringProtocol.swift */; };
 		0880D17E258F478500C92638 /* Codility11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0880D17D258F478500C92638 /* Codility11.swift */; };
 		089F2CFB25B5A9B9001FED28 /* MarkAndToys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089F2CFA25B5A9B9001FED28 /* MarkAndToys.swift */; };
 		08A1042525B073A9002A0825 /* Lesson17DynamicProgramming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A1042425B073A9002A0825 /* Lesson17DynamicProgramming.swift */; };
@@ -77,6 +78,7 @@
 		080E68E225B8297A00625A00 /* NumberSolitaire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberSolitaire.swift; sourceTree = "<group>"; };
 		080E68E725B8420E00625A00 /* MaxArraySum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxArraySum.swift; sourceTree = "<group>"; };
 		080E68F025B86BAC00625A00 /* CodelandUsernameValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodelandUsernameValidation.swift; sourceTree = "<group>"; };
+		086483CF25C050500006CB8D /* StringProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringProtocol.swift; sourceTree = "<group>"; };
 		0880D17D258F478500C92638 /* Codility11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codility11.swift; sourceTree = "<group>"; };
 		089F2CFA25B5A9B9001FED28 /* MarkAndToys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkAndToys.swift; sourceTree = "<group>"; };
 		08A1042425B073A9002A0825 /* Lesson17DynamicProgramming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson17DynamicProgramming.swift; sourceTree = "<group>"; };
@@ -176,6 +178,14 @@
 			path = Coderbyte;
 			sourceTree = "<group>";
 		};
+		086483CA25C04EE70006CB8D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				086483CF25C050500006CB8D /* StringProtocol.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		0881D1AD25AC7C5400D595D8 /* HackerRank */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,6 +266,7 @@
 		24352CDB2584CAA90010A346 /* CodeTraining */ = {
 			isa = PBXGroup;
 			children = (
+				086483CA25C04EE70006CB8D /* Extension */,
 				24352D0F2584CAB20010A346 /* CodilityLessonStudying */,
 				24352CDC2584CAA90010A346 /* AppDelegate.swift */,
 				24352CDE2584CAA90010A346 /* SceneDelegate.swift */,
@@ -483,6 +494,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				086483D025C050500006CB8D /* StringProtocol.swift in Sources */,
 				24352CE12584CAA90010A346 /* ViewController.swift in Sources */,
 				0880D17E258F478500C92638 /* Codility11.swift in Sources */,
 				2469DF74258A199C00C66490 /* Codility9to10.swift in Sources */,
