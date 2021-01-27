@@ -12,6 +12,8 @@ class ReverseShuffleMerge: XCTestCase {
 
     func test() {
         var s: String
+        s = "cbabac"
+        XCTAssertEqual("abc", reverseShuffleMerge(s: s))
         s = "eggegg"
         XCTAssertEqual("egg", reverseShuffleMerge(s: s))
         s = "abcdefgabcdefg"
@@ -42,66 +44,44 @@ class ReverseShuffleMerge: XCTestCase {
 //    }
     
     func reverseShuffleMerge(s: String) -> String {
-        let n = s.count
-        var j = 0
-        var wrdCount = [Character: Int]()
-        var solCount = [Character: Int]()
-        var remCount = [Character: Int]()
-        var sol = [Character?](repeating: nil, count: 26) // number of alphabet?
+        var countMap = [Character: Int]()
+        var requiredMap = [Character: Int]()
+        var usedMap = [Character: Int]()
+        var ans = ""
         
         s.forEach { c in
-            wrdCount.updateValue((wrdCount[c] ?? 0) + 1, forKey: c)
-            remCount.updateValue((wrdCount[c] ?? 0) + 1, forKey: c)
+            countMap.updateValue((countMap[c] ?? 0) + 1, forKey: c)
         }
-
-        for (_, count) in wrdCount.enumerated() {
-            wrdCount.updateValue(count.value / 2, forKey: count.key)
+        
+        for (_, count) in countMap.enumerated() {
+            usedMap.updateValue(0, forKey: count.key)
+            requiredMap.updateValue(count.value / 2, forKey: count.key)
         }
-
-        var char: Character
-
-        for i in stride(from: n - 1, through: 0, by: -1) {
-            char = s[i]
-            if i == (n - 1) {
-                sol[j] = char
-                j += 1
-                wrdCount.updateValue(wrdCount[char]! - 1, forKey: char)
-                solCount.updateValue((solCount[char] ?? 0) + 1, forKey: char)
+        
+        for i in stride(from: s.count - 1, through: 0, by: -1) {
+            let c = s[s.index(s.startIndex, offsetBy: i)]
+            
+            if usedMap[c]! >= requiredMap[c]! {
+                countMap.updateValue(countMap[c]! - 1, forKey: c)
                 continue
             }
-
-            if solCount[char]! < wrdCount[char]! {
-
-                if char >= sol[j - 1]! {
-                    sol[j] = char
-                    j += 1
-                    remCount.updateValue((solCount[char] ?? 0) - 1, forKey: char)
-                    solCount.updateValue((solCount[char] ?? 0) + 1, forKey: char)
-                }else{
-                    while j > 0,
-                          char < sol[j-1]!,
-                          solCount[sol[j-1]!]!-1 + remCount[sol[j-1]!]! >= wrdCount[sol[j-1]!]! {
-                        j -= 1
-                        solCount.updateValue(solCount[sol[j]!]! - 1, forKey: sol[j]!)
+            var j = ans.count - 1
+            while j >= 0 {
+                let last = ans[ans.index(ans.startIndex, offsetBy: j)]
+                if last > c {
+                    if countMap[last]! > requiredMap[last]! - usedMap[last]! {
+                        usedMap.updateValue(usedMap[last]! - 1, forKey: last)
+                        _ = ans.removeLast()
                     }
-                    sol[j] = char
-                    j += 1
-                    remCount.updateValue((solCount[char] ?? 0) - 1, forKey: char)
-                    solCount.updateValue((solCount[char] ?? 0) + 1, forKey: char)
                 }
-
-            }else{
-                remCount.updateValue((solCount[char] ?? 0) - 1, forKey: char)
+                j -= 1
             }
-
+            
+            ans.append(c)
+            usedMap.updateValue(usedMap[c]! + 1, forKey: c)
+            countMap.updateValue(countMap[c]! - 1, forKey: c)
         }
-
-        var ans = ""
-        sol.forEach { c in
-            if let char = c {
-                ans += String(char)
-            }
-        }
+        
         return ans
     }
 
