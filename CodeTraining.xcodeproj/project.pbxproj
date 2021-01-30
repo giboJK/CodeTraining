@@ -19,10 +19,13 @@
 		08A7778425C54E6200BCA9FE /* NextBigNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A7778325C54E6200BCA9FE /* NextBigNumber.swift */; };
 		08A7778825C54EB800BCA9FE /* HIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A7778725C54EB800BCA9FE /* HIndex.swift */; };
 		08A7778C25C5538100BCA9FE /* BiggestNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A7778B25C5538100BCA9FE /* BiggestNumber.swift */; };
+		08A7779125C5797400BCA9FE /* CasheSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A7779025C5797400BCA9FE /* CasheSize.swift */; };
 		08A8C7C7259A090300A193B4 /* Lesson14BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A8C7C6259A090300A193B4 /* Lesson14BinarySearch.swift */; };
 		08A8C7CC259A093200A193B4 /* MinMaxDivision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A8C7CB259A093200A193B4 /* MinMaxDivision.swift */; };
 		08A8C7D2259A093D00A193B4 /* NailingPlanks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A8C7D1259A093D00A193B4 /* NailingPlanks.swift */; };
 		08AC3FD825BBDEFE0028A562 /* CountingInversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC3FD725BBDEFE0028A562 /* CountingInversions.swift */; };
+		08B8BB4C25C5B4FB00D05BBD /* MakeBigNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B8BB4B25C5B4FB00D05BBD /* MakeBigNumber.swift */; };
+		08B8BB5025C5BC3200D05BBD /* Joystick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B8BB4F25C5BC3200D05BBD /* Joystick.swift */; };
 		08CA75AE25AB1F9D00659657 /* Lesson16Greedy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CA75AD25AB1F9D00659657 /* Lesson16Greedy.swift */; };
 		08CA75B325AB241300659657 /* MaxNonoverlappingSegments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CA75B225AB241300659657 /* MaxNonoverlappingSegments.swift */; };
 		08CA75B925AB242500659657 /* TieRopes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CA75B825AB242500659657 /* TieRopes.swift */; };
@@ -90,10 +93,13 @@
 		08A7778325C54E6200BCA9FE /* NextBigNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextBigNumber.swift; sourceTree = "<group>"; };
 		08A7778725C54EB800BCA9FE /* HIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIndex.swift; sourceTree = "<group>"; };
 		08A7778B25C5538100BCA9FE /* BiggestNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiggestNumber.swift; sourceTree = "<group>"; };
+		08A7779025C5797400BCA9FE /* CasheSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasheSize.swift; sourceTree = "<group>"; };
 		08A8C7C6259A090300A193B4 /* Lesson14BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson14BinarySearch.swift; sourceTree = "<group>"; };
 		08A8C7CB259A093200A193B4 /* MinMaxDivision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinMaxDivision.swift; sourceTree = "<group>"; };
 		08A8C7D1259A093D00A193B4 /* NailingPlanks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NailingPlanks.swift; sourceTree = "<group>"; };
 		08AC3FD725BBDEFE0028A562 /* CountingInversions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingInversions.swift; sourceTree = "<group>"; };
+		08B8BB4B25C5B4FB00D05BBD /* MakeBigNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeBigNumber.swift; sourceTree = "<group>"; };
+		08B8BB4F25C5BC3200D05BBD /* Joystick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joystick.swift; sourceTree = "<group>"; };
 		08CA75AD25AB1F9D00659657 /* Lesson16Greedy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson16Greedy.swift; sourceTree = "<group>"; };
 		08CA75B225AB241300659657 /* MaxNonoverlappingSegments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxNonoverlappingSegments.swift; sourceTree = "<group>"; };
 		08CA75B825AB242500659657 /* TieRopes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TieRopes.swift; sourceTree = "<group>"; };
@@ -227,11 +233,21 @@
 		08A7777225C54D4700BCA9FE /* Programmers */ = {
 			isa = PBXGroup;
 			children = (
+				08B8BB4625C5B00A00D05BBD /* Greedy */,
+				08A7778F25C5795D00BCA9FE /* Sort */,
+				08A7779025C5797400BCA9FE /* CasheSize.swift */,
+			);
+			path = Programmers;
+			sourceTree = "<group>";
+		};
+		08A7778F25C5795D00BCA9FE /* Sort */ = {
+			isa = PBXGroup;
+			children = (
 				08A7778325C54E6200BCA9FE /* NextBigNumber.swift */,
 				08A7778725C54EB800BCA9FE /* HIndex.swift */,
 				08A7778B25C5538100BCA9FE /* BiggestNumber.swift */,
 			);
-			path = Programmers;
+			path = Sort;
 			sourceTree = "<group>";
 		};
 		08A8C7CA259A092300A193B4 /* Lesson14 */ = {
@@ -241,6 +257,15 @@
 				08A8C7D1259A093D00A193B4 /* NailingPlanks.swift */,
 			);
 			path = Lesson14;
+			sourceTree = "<group>";
+		};
+		08B8BB4625C5B00A00D05BBD /* Greedy */ = {
+			isa = PBXGroup;
+			children = (
+				08B8BB4B25C5B4FB00D05BBD /* MakeBigNumber.swift */,
+				08B8BB4F25C5BC3200D05BBD /* Joystick.swift */,
+			);
+			path = Greedy;
 			sourceTree = "<group>";
 		};
 		08CA75B125AB23FC00659657 /* Lesson16 */ = {
@@ -548,12 +573,14 @@
 				08A4A2D125B5ADDA00FFE930 /* MinAbsSum.swift in Sources */,
 				24A4967C25B3E2B600EE4F9B /* FrequencyQueries.swift in Sources */,
 				08A7778425C54E6200BCA9FE /* NextBigNumber.swift in Sources */,
+				08B8BB4C25C5B4FB00D05BBD /* MakeBigNumber.swift in Sources */,
 				08A8C7D2259A093D00A193B4 /* NailingPlanks.swift in Sources */,
 				24CAC74325B3383100B4B722 /* CheckMagazine.swift in Sources */,
 				248C76DD25B9896C00BF2E9D /* FraudulentActivtyNotifications.swift in Sources */,
 				24CE39F125989926001B6B3E /* Ladder.swift in Sources */,
 				080E68E825B8420E00625A00 /* MaxArraySum.swift in Sources */,
 				08A1042B25B076B3002A0825 /* Lesson17.swift in Sources */,
+				08B8BB5025C5BC3200D05BBD /* Joystick.swift in Sources */,
 				08CA75B325AB241300659657 /* MaxNonoverlappingSegments.swift in Sources */,
 				2445EF8F259367FF00A2E70B /* CountNonDivisible.swift in Sources */,
 				080E68F125B86BAC00625A00 /* CodelandUsernameValidation.swift in Sources */,
@@ -563,6 +590,7 @@
 				2445EF9B259380B300A2E70B /* CountSemiprimes.swift in Sources */,
 				248C76D325B97B8F00BF2E9D /* Abbreviation.swift in Sources */,
 				08A8C7CC259A093200A193B4 /* MinMaxDivision.swift in Sources */,
+				08A7779125C5797400BCA9FE /* CasheSize.swift in Sources */,
 				24F7B7352597090C007E4C7C /* FibFrog.swift in Sources */,
 				248C76CD25B97B1E00BF2E9D /* AddTwoNumbers.swift in Sources */,
 				089F2CFB25B5A9B9001FED28 /* MarkAndToys.swift in Sources */,
