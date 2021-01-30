@@ -16,6 +16,9 @@
 		08A1042525B073A9002A0825 /* Lesson17DynamicProgramming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A1042425B073A9002A0825 /* Lesson17DynamicProgramming.swift */; };
 		08A1042B25B076B3002A0825 /* Lesson17.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A1042A25B076B3002A0825 /* Lesson17.swift */; };
 		08A4A2D125B5ADDA00FFE930 /* MinAbsSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A4A2D025B5ADDA00FFE930 /* MinAbsSum.swift */; };
+		08A7778425C54E6200BCA9FE /* NextBigNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A7778325C54E6200BCA9FE /* NextBigNumber.swift */; };
+		08A7778825C54EB800BCA9FE /* HIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A7778725C54EB800BCA9FE /* HIndex.swift */; };
+		08A7778C25C5538100BCA9FE /* BiggestNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A7778B25C5538100BCA9FE /* BiggestNumber.swift */; };
 		08A8C7C7259A090300A193B4 /* Lesson14BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A8C7C6259A090300A193B4 /* Lesson14BinarySearch.swift */; };
 		08A8C7CC259A093200A193B4 /* MinMaxDivision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A8C7CB259A093200A193B4 /* MinMaxDivision.swift */; };
 		08A8C7D2259A093D00A193B4 /* NailingPlanks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A8C7D1259A093D00A193B4 /* NailingPlanks.swift */; };
@@ -84,6 +87,9 @@
 		08A1042425B073A9002A0825 /* Lesson17DynamicProgramming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson17DynamicProgramming.swift; sourceTree = "<group>"; };
 		08A1042A25B076B3002A0825 /* Lesson17.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson17.swift; sourceTree = "<group>"; };
 		08A4A2D025B5ADDA00FFE930 /* MinAbsSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinAbsSum.swift; sourceTree = "<group>"; };
+		08A7778325C54E6200BCA9FE /* NextBigNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextBigNumber.swift; sourceTree = "<group>"; };
+		08A7778725C54EB800BCA9FE /* HIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIndex.swift; sourceTree = "<group>"; };
+		08A7778B25C5538100BCA9FE /* BiggestNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiggestNumber.swift; sourceTree = "<group>"; };
 		08A8C7C6259A090300A193B4 /* Lesson14BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson14BinarySearch.swift; sourceTree = "<group>"; };
 		08A8C7CB259A093200A193B4 /* MinMaxDivision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinMaxDivision.swift; sourceTree = "<group>"; };
 		08A8C7D1259A093D00A193B4 /* NailingPlanks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NailingPlanks.swift; sourceTree = "<group>"; };
@@ -218,6 +224,16 @@
 			path = Lesson17;
 			sourceTree = "<group>";
 		};
+		08A7777225C54D4700BCA9FE /* Programmers */ = {
+			isa = PBXGroup;
+			children = (
+				08A7778325C54E6200BCA9FE /* NextBigNumber.swift */,
+				08A7778725C54EB800BCA9FE /* HIndex.swift */,
+				08A7778B25C5538100BCA9FE /* BiggestNumber.swift */,
+			);
+			path = Programmers;
+			sourceTree = "<group>";
+		};
 		08A8C7CA259A092300A193B4 /* Lesson14 */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +298,7 @@
 		24352CF22584CAA90010A346 /* CodeTrainingTests */ = {
 			isa = PBXGroup;
 			children = (
+				08A7777225C54D4700BCA9FE /* Programmers */,
 				248C76CB25B97A1D00BF2E9D /* LeetCode */,
 				080E68EF25B86ABB00625A00 /* Coderbyte */,
 				0881D1AD25AC7C5400D595D8 /* HackerRank */,
@@ -515,8 +532,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				24F7B726259576B1007E4C7C /* CommonPrimeDivisors.swift in Sources */,
+				08A7778825C54EB800BCA9FE /* HIndex.swift in Sources */,
 				08DB8DBC25BD7D1200745D9F /* LuckBalance.swift in Sources */,
 				24CAC74925B3389900B4B722 /* SherlockAndAnagrams.swift in Sources */,
+				08A7778C25C5538100BCA9FE /* BiggestNumber.swift in Sources */,
 				24D2F2BC25A1588A0040B7A7 /* CountTriangles.swift in Sources */,
 				24CAC73F25B337E700B4B722 /* CountTriplets.swift in Sources */,
 				24760BB725A0BA8A00D37772 /* CountDistinctSlices.swift in Sources */,
@@ -528,6 +547,7 @@
 				08CA75B925AB242500659657 /* TieRopes.swift in Sources */,
 				08A4A2D125B5ADDA00FFE930 /* MinAbsSum.swift in Sources */,
 				24A4967C25B3E2B600EE4F9B /* FrequencyQueries.swift in Sources */,
+				08A7778425C54E6200BCA9FE /* NextBigNumber.swift in Sources */,
 				08A8C7D2259A093D00A193B4 /* NailingPlanks.swift in Sources */,
 				24CAC74325B3383100B4B722 /* CheckMagazine.swift in Sources */,
 				248C76DD25B9896C00BF2E9D /* FraudulentActivtyNotifications.swift in Sources */,
