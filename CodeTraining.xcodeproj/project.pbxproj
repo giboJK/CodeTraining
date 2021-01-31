@@ -44,6 +44,8 @@
 		2469DF74258A199C00C66490 /* Codility9to10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469DF73258A199C00C66490 /* Codility9to10.swift */; };
 		24760BB125A0B25400D37772 /* AbsDistinct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24760BB025A0B25400D37772 /* AbsDistinct.swift */; };
 		24760BB725A0BA8A00D37772 /* CountDistinctSlices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24760BB625A0BA8A00D37772 /* CountDistinctSlices.swift */; };
+		247A337825C6F7F500F78010 /* Camouflage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247A337725C6F7F500F78010 /* Camouflage.swift */; };
+		247A337E25C6FC3200F78010 /* BestAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247A337D25C6FC3200F78010 /* BestAlbum.swift */; };
 		248C76CD25B97B1E00BF2E9D /* AddTwoNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248C76CC25B97B1E00BF2E9D /* AddTwoNumbers.swift */; };
 		248C76D325B97B8F00BF2E9D /* Abbreviation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248C76D225B97B8F00BF2E9D /* Abbreviation.swift */; };
 		248C76DD25B9896C00BF2E9D /* FraudulentActivtyNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248C76DC25B9896C00BF2E9D /* FraudulentActivtyNotifications.swift */; };
@@ -122,6 +124,8 @@
 		2469DF73258A199C00C66490 /* Codility9to10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codility9to10.swift; sourceTree = "<group>"; };
 		24760BB025A0B25400D37772 /* AbsDistinct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsDistinct.swift; sourceTree = "<group>"; };
 		24760BB625A0BA8A00D37772 /* CountDistinctSlices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDistinctSlices.swift; sourceTree = "<group>"; };
+		247A337725C6F7F500F78010 /* Camouflage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camouflage.swift; sourceTree = "<group>"; };
+		247A337D25C6FC3200F78010 /* BestAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestAlbum.swift; sourceTree = "<group>"; };
 		248C76CC25B97B1E00BF2E9D /* AddTwoNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTwoNumbers.swift; sourceTree = "<group>"; };
 		248C76D225B97B8F00BF2E9D /* Abbreviation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Abbreviation.swift; sourceTree = "<group>"; };
 		248C76DC25B9896C00BF2E9D /* FraudulentActivtyNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FraudulentActivtyNotifications.swift; sourceTree = "<group>"; };
@@ -233,6 +237,7 @@
 		08A7777225C54D4700BCA9FE /* Programmers */ = {
 			isa = PBXGroup;
 			children = (
+				247A337625C6F79C00F78010 /* Hash */,
 				08B8BB4625C5B00A00D05BBD /* Greedy */,
 				08A7778F25C5795D00BCA9FE /* Sort */,
 				08A7779025C5797400BCA9FE /* CasheSize.swift */,
@@ -383,6 +388,15 @@
 				24D2F2BF25A20B6F0040B7A7 /* MinAbsSumOfTwo.swift */,
 			);
 			path = Lesson15;
+			sourceTree = "<group>";
+		};
+		247A337625C6F79C00F78010 /* Hash */ = {
+			isa = PBXGroup;
+			children = (
+				247A337725C6F7F500F78010 /* Camouflage.swift */,
+				247A337D25C6FC3200F78010 /* BestAlbum.swift */,
+			);
+			path = Hash;
 			sourceTree = "<group>";
 		};
 		248C76CB25B97A1D00BF2E9D /* LeetCode */ = {
@@ -557,12 +571,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				24F7B726259576B1007E4C7C /* CommonPrimeDivisors.swift in Sources */,
+				247A337E25C6FC3200F78010 /* BestAlbum.swift in Sources */,
 				08A7778825C54EB800BCA9FE /* HIndex.swift in Sources */,
 				08DB8DBC25BD7D1200745D9F /* LuckBalance.swift in Sources */,
 				24CAC74925B3389900B4B722 /* SherlockAndAnagrams.swift in Sources */,
 				08A7778C25C5538100BCA9FE /* BiggestNumber.swift in Sources */,
 				24D2F2BC25A1588A0040B7A7 /* CountTriangles.swift in Sources */,
 				24CAC73F25B337E700B4B722 /* CountTriplets.swift in Sources */,
+				247A337825C6F7F500F78010 /* Camouflage.swift in Sources */,
 				24760BB725A0BA8A00D37772 /* CountDistinctSlices.swift in Sources */,
 				08AC3FD825BBDEFE0028A562 /* CountingInversions.swift in Sources */,
 				24DC8F1D259475CD00C64726 /* EuclideanAlgorithm.swift in Sources */,
