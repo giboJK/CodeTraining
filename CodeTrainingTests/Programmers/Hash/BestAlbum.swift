@@ -21,11 +21,14 @@ class BestAlbum: XCTestCase {
         plays = [500, 2500, 150, 800, 2500, 100, 100]
         XCTAssertEqual([1, 4, 3, 0], solution(genres, plays))
         
+        genres = ["classic", "pop", "classic", "classic", "pop", "pop", "jazz"]
+        plays = [500, 2500, 150, 800, 2500, 100, 100, 50]
+        XCTAssertEqual([1, 4, 3, 0, 6], solution(genres, plays))
     }
 
     func solution(_ genres:[String], _ plays:[Int]) -> [Int] {
         var map = [String: Int]()
-        var topTwo = [String: [Int]]() // 고유 번호가 아니라 플레이 횟수 어차피 where first로 하면 되
+        var topTwo = [String: [Int]]()
         var ans: [Int] = []
         
         for i in 0 ..< genres.count {
@@ -58,7 +61,9 @@ class BestAlbum: XCTestCase {
                 if genres[i] == info.key, plays[i] == playCount[order] {
                     ans.append(i)
                     order += 1
-                    if order == 2 {
+                    if playCount.count < 2{
+                        i = genres.count
+                    } else if order == 2 {
                         i = genres.count
                     } else if playCount[0] != playCount[1] {
                         i = -1
