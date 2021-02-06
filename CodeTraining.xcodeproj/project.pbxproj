@@ -32,6 +32,8 @@
 		08DB8DBC25BD7D1200745D9F /* LuckBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DB8DBB25BD7D1200745D9F /* LuckBalance.swift */; };
 		08DB8DC225BD842700745D9F /* ReverseShuffleMerge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DB8DC125BD842700745D9F /* ReverseShuffleMerge.swift */; };
 		2402DD0725CC14DA00B55289 /* FineSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2402DD0625CC14DA00B55289 /* FineSquare.swift */; };
+		24034EC625CED1C00028D6BD /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24034EC525CED1C00028D6BD /* Triangle.swift */; };
+		2427FAD925CE61D3008A7EB1 /* Applicant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2427FAD825CE61D3008A7EB1 /* Applicant.swift */; };
 		24352CDD2584CAA90010A346 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24352CDC2584CAA90010A346 /* AppDelegate.swift */; };
 		24352CDF2584CAA90010A346 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24352CDE2584CAA90010A346 /* SceneDelegate.swift */; };
 		24352CE12584CAA90010A346 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24352CE02584CAA90010A346 /* ViewController.swift */; };
@@ -109,6 +111,8 @@
 		08DB8DBB25BD7D1200745D9F /* LuckBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckBalance.swift; sourceTree = "<group>"; };
 		08DB8DC125BD842700745D9F /* ReverseShuffleMerge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseShuffleMerge.swift; sourceTree = "<group>"; };
 		2402DD0625CC14DA00B55289 /* FineSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FineSquare.swift; sourceTree = "<group>"; };
+		24034EC525CED1C00028D6BD /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
+		2427FAD825CE61D3008A7EB1 /* Applicant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Applicant.swift; sourceTree = "<group>"; };
 		24352CD92584CAA90010A346 /* CodeTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24352CDC2584CAA90010A346 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24352CDE2584CAA90010A346 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -239,11 +243,14 @@
 		08A7777225C54D4700BCA9FE /* Programmers */ = {
 			isa = PBXGroup;
 			children = (
+				2402DD0E25CC307A00B55289 /* StackQueue */,
 				2402DD0525CC144D00B55289 /* SummerWinter */,
 				247A337625C6F79C00F78010 /* Hash */,
 				08B8BB4625C5B00A00D05BBD /* Greedy */,
 				08A7778F25C5795D00BCA9FE /* Sort */,
 				08A7779025C5797400BCA9FE /* CasheSize.swift */,
+				2427FAD825CE61D3008A7EB1 /* Applicant.swift */,
+				24034EC525CED1C00028D6BD /* Triangle.swift */,
 			);
 			path = Programmers;
 			sourceTree = "<group>";
@@ -300,6 +307,13 @@
 				2402DD0625CC14DA00B55289 /* FineSquare.swift */,
 			);
 			path = SummerWinter;
+			sourceTree = "<group>";
+		};
+		2402DD0E25CC307A00B55289 /* StackQueue */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = StackQueue;
 			sourceTree = "<group>";
 		};
 		24352CD02584CAA90010A346 = {
@@ -588,6 +602,7 @@
 				24CAC74925B3389900B4B722 /* SherlockAndAnagrams.swift in Sources */,
 				08A7778C25C5538100BCA9FE /* BiggestNumber.swift in Sources */,
 				24D2F2BC25A1588A0040B7A7 /* CountTriangles.swift in Sources */,
+				24034EC625CED1C00028D6BD /* Triangle.swift in Sources */,
 				24CAC73F25B337E700B4B722 /* CountTriplets.swift in Sources */,
 				247A337825C6F7F500F78010 /* Camouflage.swift in Sources */,
 				24760BB725A0BA8A00D37772 /* CountDistinctSlices.swift in Sources */,
@@ -616,6 +631,7 @@
 				24352D232584CB340010A346 /* CodilityTests.swift in Sources */,
 				24760BB125A0B25400D37772 /* AbsDistinct.swift in Sources */,
 				2445EF9B259380B300A2E70B /* CountSemiprimes.swift in Sources */,
+				2427FAD925CE61D3008A7EB1 /* Applicant.swift in Sources */,
 				248C76D325B97B8F00BF2E9D /* Abbreviation.swift in Sources */,
 				08A8C7CC259A093200A193B4 /* MinMaxDivision.swift in Sources */,
 				08A7779125C5797400BCA9FE /* CasheSize.swift in Sources */,
