@@ -12,6 +12,7 @@
 		080E68F125B86BAC00625A00 /* CodelandUsernameValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080E68F025B86BAC00625A00 /* CodelandUsernameValidation.swift */; };
 		086483D025C050500006CB8D /* StringProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086483CF25C050500006CB8D /* StringProtocol.swift */; };
 		0880D17E258F478500C92638 /* Codility11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0880D17D258F478500C92638 /* Codility11.swift */; };
+		089DD54525CF7C8100992E90 /* SkillTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089DD54425CF7C8100992E90 /* SkillTree.swift */; };
 		089F2CFB25B5A9B9001FED28 /* MarkAndToys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089F2CFA25B5A9B9001FED28 /* MarkAndToys.swift */; };
 		08A1042525B073A9002A0825 /* Lesson17DynamicProgramming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A1042425B073A9002A0825 /* Lesson17DynamicProgramming.swift */; };
 		08A1042B25B076B3002A0825 /* Lesson17.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A1042A25B076B3002A0825 /* Lesson17.swift */; };
@@ -93,6 +94,7 @@
 		080E68F025B86BAC00625A00 /* CodelandUsernameValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodelandUsernameValidation.swift; sourceTree = "<group>"; };
 		086483CF25C050500006CB8D /* StringProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringProtocol.swift; sourceTree = "<group>"; };
 		0880D17D258F478500C92638 /* Codility11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codility11.swift; sourceTree = "<group>"; };
+		089DD54425CF7C8100992E90 /* SkillTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillTree.swift; sourceTree = "<group>"; };
 		089F2CFA25B5A9B9001FED28 /* MarkAndToys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkAndToys.swift; sourceTree = "<group>"; };
 		08A1042425B073A9002A0825 /* Lesson17DynamicProgramming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson17DynamicProgramming.swift; sourceTree = "<group>"; };
 		08A1042A25B076B3002A0825 /* Lesson17.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson17.swift; sourceTree = "<group>"; };
@@ -310,6 +312,7 @@
 			isa = PBXGroup;
 			children = (
 				2402DD0625CC14DA00B55289 /* FineSquare.swift */,
+				089DD54425CF7C8100992E90 /* SkillTree.swift */,
 			);
 			path = SummerWinter;
 			sourceTree = "<group>";
@@ -625,6 +628,7 @@
 				08A7778C25C5538100BCA9FE /* BiggestNumber.swift in Sources */,
 				24034ECC25CEF0DA0028D6BD /* StringCompression.swift in Sources */,
 				24D2F2BC25A1588A0040B7A7 /* CountTriangles.swift in Sources */,
+				089DD54525CF7C8100992E90 /* SkillTree.swift in Sources */,
 				24034EC625CED1C00028D6BD /* Triangle.swift in Sources */,
 				24CAC73F25B337E700B4B722 /* CountTriplets.swift in Sources */,
 				247A337825C6F7F500F78010 /* Camouflage.swift in Sources */,
