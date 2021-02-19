@@ -10,6 +10,7 @@
 		080E68E325B8297A00625A00 /* NumberSolitaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080E68E225B8297A00625A00 /* NumberSolitaire.swift */; };
 		080E68E825B8420E00625A00 /* MaxArraySum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080E68E725B8420E00625A00 /* MaxArraySum.swift */; };
 		080E68F125B86BAC00625A00 /* CodelandUsernameValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080E68F025B86BAC00625A00 /* CodelandUsernameValidation.swift */; };
+		0832D58225DF526800E58C28 /* Printer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0832D58125DF526800E58C28 /* Printer.swift */; };
 		086483D025C050500006CB8D /* StringProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086483CF25C050500006CB8D /* StringProtocol.swift */; };
 		0880D17E258F478500C92638 /* Codility11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0880D17D258F478500C92638 /* Codility11.swift */; };
 		089DD54525CF7C8100992E90 /* SkillTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089DD54425CF7C8100992E90 /* SkillTree.swift */; };
@@ -92,6 +93,7 @@
 		080E68E225B8297A00625A00 /* NumberSolitaire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberSolitaire.swift; sourceTree = "<group>"; };
 		080E68E725B8420E00625A00 /* MaxArraySum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxArraySum.swift; sourceTree = "<group>"; };
 		080E68F025B86BAC00625A00 /* CodelandUsernameValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodelandUsernameValidation.swift; sourceTree = "<group>"; };
+		0832D58125DF526800E58C28 /* Printer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Printer.swift; sourceTree = "<group>"; };
 		086483CF25C050500006CB8D /* StringProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringProtocol.swift; sourceTree = "<group>"; };
 		0880D17D258F478500C92638 /* Codility11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codility11.swift; sourceTree = "<group>"; };
 		089DD54425CF7C8100992E90 /* SkillTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillTree.swift; sourceTree = "<group>"; };
@@ -321,6 +323,7 @@
 			isa = PBXGroup;
 			children = (
 				24CC9CAE25D9381600B14DBC /* PassingTruck.swift */,
+				0832D58125DF526800E58C28 /* Printer.swift */,
 			);
 			path = StackQueue;
 			sourceTree = "<group>";
@@ -632,6 +635,7 @@
 				24034EC625CED1C00028D6BD /* Triangle.swift in Sources */,
 				24CAC73F25B337E700B4B722 /* CountTriplets.swift in Sources */,
 				247A337825C6F7F500F78010 /* Camouflage.swift in Sources */,
+				0832D58225DF526800E58C28 /* Printer.swift in Sources */,
 				24760BB725A0BA8A00D37772 /* CountDistinctSlices.swift in Sources */,
 				08AC3FD825BBDEFE0028A562 /* CountingInversions.swift in Sources */,
 				24DC8F1D259475CD00C64726 /* EuclideanAlgorithm.swift in Sources */,
